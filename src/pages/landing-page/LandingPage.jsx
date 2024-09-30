@@ -1,10 +1,12 @@
 import React from "react";
 import background from "../../assets/bg-4.jpg";
 import cross from "../../assets/cross.jpg";
+import { BiSolidDownArrow } from "react-icons/bi";
+import ButtonComponent from "../../components/ButtonComponent";
+import NavBarComponent from "../../components/NavBarComponent";
+import "animate.css";
 
 const LandingPage = () => {
-  const linkStyle =
-    "text-white hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-semibold transition duration-300";
   const buttonStyle =
     "bg-orange-500 text-white py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full font-bold cursor-pointer hover:bg-orange-600 text-sm sm:text-base md:text-lg mt-4";
   return (
@@ -15,6 +17,7 @@ const LandingPage = () => {
           backgroundImage: `url(${background})`,
         }}
       >
+        <NavBarComponent />
         <div
           className="absolute inset-0"
           style={{
@@ -22,43 +25,21 @@ const LandingPage = () => {
               "linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0))",
           }}
         ></div>
-        <div className="flex flex-col sm:flex-row justify-between items-center relative z-10 p-4">
-          <div className="logo mb-4 sm:mb-0">
-            <h1 className="text-3xl sm:text-4xl font-bold text-orange-500 mb-2 font-coiny">
-              ZBC
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-300">
-              Zomba Baptist Church
-            </p>
-          </div>
-          <div className="links flex flex-wrap justify-center">
-            <a href="/about" className={linkStyle}>
-              About
-            </a>
-            <a href="/services" className={linkStyle}>
-              Services
-            </a>
-            <a href="/contact" className={linkStyle}>
-              Contact
-            </a>
-            <a href="/ministries" className={linkStyle}>
-              Ministries
-            </a>
-            <a href="/giving" className={linkStyle}>
-              Giving
-            </a>
-          </div>
-        </div>
+
         <div className="relative z-10 flex flex-col items-center justify-center h-screen text-center px-4">
-          <h1 className="text-4xl sm:text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl 4xl:text-10xl font-bold text-white mb-4 font-coiny">
+          <h1 className="animate__animated animate__fadeInDown  text-4xl sm:text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl 4xl:text-10xl font-bold text-white mb-4 font-coiny">
             What did Jesus say?
           </h1>
-          <p className="text-lg sm:text-xl text-white mb-8 max-w-2xl font-paragraph">
+          <p className=" animate__animated animate__fadeInUp  text-lg sm:text-xl text-white mb-8 max-w-2xl font-paragraph">
             Zomba Baptist Church is a welcoming community for spiritual growth
             through engaging sermons, Bible studies, and fellowship.
           </p>
 
-          <button className={buttonStyle}>Discover Now</button>
+          <button className={` animate__animated animate__bounceInUp ${buttonStyle} `}>
+            <div className="flex items-center">
+              Discover Now <BiSolidDownArrow className="ml-2" />
+            </div>
+          </button>
         </div>
       </div>
       <div className="flex flex-col md:flex-row bg-gray-50">
@@ -77,7 +58,7 @@ const LandingPage = () => {
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur.
             </p>
-            <button className={buttonStyle}>Learn More</button>
+            <ButtonComponent label="Learn More" />
           </div>
 
           <div className="flex justify-center md:justify-start ">
@@ -209,7 +190,7 @@ const LandingPage = () => {
                 alt="Church"
                 className="w-16 h-16 object-cover mb-4"
               />
-              <h3 className="text-lg font-semibold mb-2">Worship</h3>
+              <h3 className="text-lg font-semibold mb-2">Church</h3>
               <p className="text-center text-gray-600">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur.
@@ -229,7 +210,33 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="flex justify-center mt-8">
-            <button className={buttonStyle}>All Services</button>
+            <ButtonComponent label="All Services" />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-50 py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 px-5">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-orange-500">
+              How to find Jesus
+            </h2>
+            <p className="text-sm md:text-base text-gray-700 mb-4">
+              Finding Jesus is a personal journey that begins with an open heart
+              and mind. It involves reading the Bible, praying, and seeking
+              guidance from fellow believers. Attending church services and
+              participating in community activities can also help. Remember,
+              Jesus said, "Seek and you will find" (Matthew 7:7).
+            </p>
+            <ButtonComponent label="Learn More" />
+          </div>
+
+          <div className="w-full md:w-1/3 px-4">
+            <img
+              src="/cross_2.jpg"
+              alt="Jesus"
+              className="w-full h-auto rounded-sm shadow-md"
+            />
           </div>
         </div>
       </div>
