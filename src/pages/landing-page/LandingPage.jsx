@@ -5,16 +5,42 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import ButtonComponent from "../../components/ButtonComponent";
 import NavBarComponent from "../../components/NavBarComponent";
 import "animate.css";
+import ScrollReveal from "scrollreveal";
 
 const LandingPage = () => {
   const buttonStyle =
     "bg-orange-500 text-white py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full font-bold cursor-pointer hover:bg-orange-600 text-sm sm:text-base md:text-lg mt-4";
+
+  const [scrollPosition, setScrollPosition] = React.useState(0);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    ScrollReveal().reveal(".reveal", {
+      duration: 600,
+      distance: "100px",
+      easing: "ease-in-out",
+      origin: "bottom",
+      reset: true,
+    });
+    window.addEventListener("scroll", handleScroll, { passive: false });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div
-        className="bg-cover bg-center min-h-screen relative"
+        className="bg-cover bg-center min-h-screen relative bg-fixed"
         style={{
           backgroundImage: `url(${background})`,
+          backgroundAttachment: "fixed",
+          backgroundPosition: `center ${scrollPosition * -0.5}px`,
         }}
       >
         <NavBarComponent />
@@ -26,29 +52,57 @@ const LandingPage = () => {
           }}
         ></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-screen text-center px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
           <h1 className="animate__animated animate__fadeInDown  text-4xl sm:text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl 4xl:text-10xl font-bold text-white mb-4 font-coiny">
             What did Jesus say?
           </h1>
           <p className=" animate__animated animate__fadeInUp  text-lg sm:text-xl text-white mb-8 max-w-2xl font-paragraph">
             Zomba Baptist Church is a welcoming community for spiritual growth
-            through engaging sermons, Bible studies, and fellowship.
+            through engaging sermons, Bible studies, and fellowship.{" "}
           </p>
 
-          <button className={` animate__animated animate__bounceInUp ${buttonStyle} `}>
+          <button
+            className={` animate__animated animate__bounceInUp ${buttonStyle} `}
+          >
             <div className="flex items-center">
               Discover Now <BiSolidDownArrow className="ml-2" />
             </div>
           </button>
         </div>
       </div>
+
       <div className="flex flex-col md:flex-row bg-gray-50">
+        <div className="w-full p-8 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-500 mb-4 font-coiny">
+            Join us for church this Sunday!
+          </h2>
+          <p className="text-xl sm:text-2xl mb-6 font-paragraph">
+            Our weekend services last one hour. We can't wait to meet you!
+          </p>
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="mx-4 my-2">
+              <span className="text-2xl sm:text-3xl font-bold">8:00 am</span>
+            </div>
+            <div className="mx-4 my-2">
+              <span className="text-2xl sm:text-3xl font-bold">9:30 am</span>
+            </div>
+            <div className="mx-4 my-2">
+              <span className="text-2xl sm:text-3xl font-bold">11:00 am</span>
+            </div>
+            <div className="mx-4 my-2">
+              <span className="text-2xl sm:text-3xl font-bold">12:30 pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" reveal flex flex-col md:flex-row bg-gray-50">
         <div className="w-full md:w-1/2 flex flex-col md:flex-row p-4">
           <div className="mb-4 md:mb-0 md:mr-4">
             <h3 className="font-welcome text-orange-500 text-3xl sm:text-4xl mb-2">
               Welcome
             </h3>
-            <p className="font-paragraph text-gray-700 text-base sm:text-lg">
+            <p className=" font-paragraph text-gray-700 text-base sm:text-lg">
               We believe that the greatest event on anyone's life is the day
               that they discover who Jesus is and what He has done for them.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

@@ -4,7 +4,8 @@ const NavBarComponent = () => {
   const linkStyle =
     "text-white hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-semibold font-paragraph transition duration-300";
   return (
-    <nav>
+    // className="bg-black"
+    <nav >
       <div className="flex flex-col sm:flex-row justify-between items-center relative z-10 p-4">
         <div className="logo mb-4 sm:mb-0 cursor-pointer" onClick={() => window.location.href = '/'}>
           <h1 className="text-3xl sm:text-4xl font-bold text-orange-500 mb-2 font-coiny">
