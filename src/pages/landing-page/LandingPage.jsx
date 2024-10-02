@@ -73,7 +73,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col md:flex-row bg-gray-50">
         <div className="w-full p-8 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-500 mb-4 font-coiny">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 font-coiny">
             Join us for church this Sunday!
           </h2>
           <p className="text-xl sm:text-2xl mb-6 font-paragraph">
