@@ -81,13 +81,13 @@ const LandingPage = () => {
           </p>
           <div className="flex flex-wrap justify-center items-center">
             <div className="mx-4 my-2">
-              <span className="text-2xl sm:text-3xl font-bold">8:00 am</span>
+              <span className="text-2xl sm:text-3xl font-bold">8:00 am -</span>
             </div>
             <div className="mx-4 my-2">
               <span className="text-2xl sm:text-3xl font-bold">9:30 am</span>
             </div>
             <div className="mx-4 my-2">
-              <span className="text-2xl sm:text-3xl font-bold">11:00 am</span>
+              <span className="text-2xl sm:text-3xl font-bold">11:00 am -</span>
             </div>
             <div className="mx-4 my-2">
               <span className="text-2xl sm:text-3xl font-bold">12:30 pm</span>
@@ -172,7 +172,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="bg-gray-50">
-        <div className="relative h-64 overflow-hidden">
+        <div className="relative h-80 overflow-hidden">
           <div
             className="absolute inset-0"
             style={{
