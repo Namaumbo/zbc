@@ -18,21 +18,17 @@ const NavBarComponent = () => {
     
         </div>
         <div className="links flex flex-wrap justify-center">
-          <a href="/about" className={linkStyle}>
-            About
-          </a>
-          <a href="/services" className={linkStyle}>
-            Services
-          </a>
-          <a href="/contact" className={linkStyle}>
-            Contact
-          </a>
-          <a href="/ministries" className={linkStyle}>
-            Ministries
-          </a>
-          <a href="/giving" className={linkStyle}>
-            Giving
-          </a>
+          {[
+            { href: "/about", text: "About" },
+            { href: "/ministries", text: "Ministries" },
+            { href: "/services", text: "Services" },
+            { href: "/contact", text: "Contact" },
+            { href: "/giving", text: "Giving" }
+          ].map((link) => (
+            <a key={link.href} href={link.href} className={linkStyle}>
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>{" "}
     </nav>
