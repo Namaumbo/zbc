@@ -6,10 +6,14 @@ import ButtonComponent from "../../components/ButtonComponent";
 import NavBarComponent from "../../components/NavBarComponent";
 import "animate.css";
 import ScrollReveal from "scrollreveal";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowDownCircle } from "lucide-react";
 
 const LandingPage = () => {
   const buttonStyle =
     "bg-orange-500 text-white py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full font-bold cursor-pointer hover:bg-orange-600 text-sm sm:text-base md:text-lg mt-4";
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 200, 300, 500], [1, 0.5, 0.5, 0]);
 
   const [scrollPosition, setScrollPosition] = React.useState(0);
 
@@ -61,13 +65,14 @@ const LandingPage = () => {
             through engaging sermons, Bible studies, and fellowship.{" "}
           </p>
 
-          <button
-            className={` animate__animated animate__bounceInUp ${buttonStyle} `}
+          <motion.div
+            className=" absolute bottom-[7rem] left-1/2 transform -translate-x-1/2"
+            style={{ opacity }}
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
           >
-            <div className="flex items-center">
-              Discover Now <BiSolidDownArrow className="ml-2" />
-            </div>
-          </button>
+            <BiSolidDownArrow size={52} color="white" />
+          </motion.div>
         </div>
       </div>
 

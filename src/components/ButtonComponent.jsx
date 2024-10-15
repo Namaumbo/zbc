@@ -1,13 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const ButtonComponent = ({ onClick, label, disabled }) => {
-  const BtnStyle =
-    "bg-orange-500 text-white py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full font-bold cursor-pointer hover:bg-orange-600 text-sm sm:text-base md:text-lg mt-4";
-
+const ButtonComponent = ({ onClick, label, disabled, icon }) => {
   return (
-    <button onClick={onClick} className={BtnStyle}>
-      {label}
-    </button>
+    <>
+      <motion.button
+        className=" bg-orange-500 px-8 py-3 rounded-full font-semibold text-lg hover:bg-orange-600 transition-colors shadow-lg text-white"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {label || icon}
+      </motion.button>
+    </>
   );
 };
 

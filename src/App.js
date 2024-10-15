@@ -7,6 +7,7 @@ import ContactPage from './pages/contact-page/ContactPage.jsx';
 import EventsPage from './pages/events-page/EventsPage.jsx';
 import SermonArchive from './pages/sermon-archive/SermonArchive.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FooterComponent from './components/FooterComponent.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/sermons" element={<SermonArchive />} />
         </Routes>
+        <FooterComponent/>
       </div>
     </Router>
   );
