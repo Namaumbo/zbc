@@ -6,21 +6,29 @@ const EventsPage = () => {
   return (
     <div>
       <NavBarComponent />
+
       <div className="bg-gradient-to-r from-[#160b14] to-black flex flex-col items-center justify-center pb-32 ">
-        <div className="flex flex-col items-center justify-center mt-8">
-          <motion.h1 className="font-coiny text-orange-700 text-5xl font-bold">
-            ZBC Events
-          </motion.h1>
-          <motion.p className="font-paragraph text-white text-center w-[50%] mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </motion.p>
-        </div>
+        <motion.h3
+          className="text-6xl text-center font-bold font-coiny text-orange-700 pb-5 pt-24"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          ZBC Events
+        </motion.h3>
+
+        <motion.p
+          className="w-[50%] text-white font-paragraph text-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </motion.p>
       </div>
-      <div
-      >
+      <div>
         <motion.div
           className="h-screen sticky top-0 items-center justify-center bg-no-repeat  scroll-m-1 overflow-scroll"
           style={{
@@ -30,12 +38,12 @@ const EventsPage = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-row justify-center mt-8">
             <motion.div
               className="bg-white rounded-sm p-6 shadow-2xl w-[40%] ml-28"
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 1, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 2 }}
             >
               <h3 className="font-bold text-5xl font-coiny w-96">
                 Children Ministry
@@ -53,10 +61,10 @@ const EventsPage = () => {
             </motion.div>
 
             <motion.div
-              className=" rounded-sm mb-5 shadow-2xl w-[40%] ml-28 mt-10"
-              initial={{ opacity: 0, x: 10 }}
-              whileInView={{ opacity: 1, x: -150 }}
-              transition={{ duration: 1 }}
+              className=" rounded-sm mb-5 shadow-2xl w-[40%] ml-[-2%]"
+              initial={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 5 }}
+              transition={{ duration: 1, delay: 1 }}
             >
               <img
                 src="/kids.jpg"
@@ -66,7 +74,7 @@ const EventsPage = () => {
             </motion.div>
           </div>
 
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-row justify-center mt-8">
             <motion.div
               className="bg-white rounded-sm p-6 shadow-2xl w-[40%] ml-28"
               initial={{ opacity: 0, y: 50 }}
@@ -89,10 +97,10 @@ const EventsPage = () => {
             </motion.div>
 
             <motion.div
-              className=" rounded-sm mb-5 shadow-2xl w-[40%] ml-28 mt-10"
-              initial={{ opacity: 0, x: 10 }}
-              whileInView={{ opacity: 1, x: -150 }}
-              transition={{ duration: 1 }}
+              className=" rounded-sm mb-5 shadow-2xl w-[40%] ml-[-2%]"
+              initial={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 20 }}
+              transition={{ duration: 3, delay: 1 }}
             >
               <img
                 src="/kids.jpg"

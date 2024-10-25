@@ -1,5 +1,8 @@
 import './App.css';
 import './index.css';
+import 'flowbite';
+import 'flowbite-react';
+
 import LandingPage from './pages/landing-page/LandingPage';
 import AboutPage from './pages/about-page/AboutPage';
 import MinistriesPage from './pages/ministries-page/MinistriesPage.jsx';
