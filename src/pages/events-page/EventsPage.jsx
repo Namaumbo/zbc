@@ -1,12 +1,12 @@
 import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import { motion } from "framer-motion";
-
+import { Button } from "flowbite-react"
 const EventsPage = () => {
   return (
     <div>
       <NavBarComponent />
-
+      <Button className="success">You will make it </Button>
       <div className="bg-gradient-to-r from-[#160b14] to-black flex flex-col items-center justify-center pb-32 ">
         <motion.h3
           className="text-6xl text-center font-bold font-coiny text-orange-700 pb-5 pt-24"

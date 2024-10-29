@@ -7,11 +7,8 @@ import NavBarComponent from "../../components/NavBarComponent";
 import "animate.css";
 import ScrollReveal from "scrollreveal";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDownCircle } from "lucide-react";
-
+import { CarouselComponent } from "../../components/CarouselComponent";
 const LandingPage = () => {
-  const buttonStyle =
-    "bg-orange-500 text-white py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full font-bold cursor-pointer hover:bg-orange-600 text-sm sm:text-base md:text-lg mt-4";
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 200, 300, 500], [1, 0.5, 0.5, 0]);
 
@@ -56,24 +53,18 @@ const LandingPage = () => {
           }}
         ></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
-          <h1 className="animate__animated animate__fadeInDown  text-4xl sm:text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl 4xl:text-10xl font-bold text-white mb-4 font-coiny">
-            What did Jesus say?
-          </h1>
-          <p className=" animate__animated animate__fadeInUp  text-lg sm:text-xl text-white mb-8 max-w-2xl font-paragraph">
-            Zomba Baptist Church is a welcoming community for spiritual growth
-            through engaging sermons, Bible studies, and fellowship.{" "}
-          </p>
-
+        <div className="w-full">         
+          <CarouselComponent/>
+          </div>
           <motion.div
-            className=" absolute bottom-[7rem] left-1/2 transform -translate-x-1/2"
+            className=" absolute bottom-[2rem] left-1/2 transform -translate-x-1/2"
             style={{ opacity }}
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 15, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
           >
             <BiSolidDownArrow size={52} color="white" />
           </motion.div>
-        </div>
+
       </div>
 
       <div className="flex flex-col md:flex-row bg-gray-50">
