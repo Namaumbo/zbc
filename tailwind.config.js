@@ -9,6 +9,7 @@ module.exports = {
         title: ["Oswald", "sans-serif"],
         welcome: ["Zeyada", "cursive"],
         paragraph: ["Questrial", "sans-serif"],
+        heading: ["Figtree", "sans-serif"],
       },
     },
   },

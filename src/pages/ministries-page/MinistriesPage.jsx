@@ -26,7 +26,7 @@ const ParallaxScroll = () => {
 
       <div className="bg-gradient-to-r from-[#160b14] to-black flex flex-col items-center justify-center pb-32 ">
         <motion.h3
-          className="text-6xl text-center font-bold font-coiny text-orange-700 pb-5 pt-24"
+          className="text-6xl text-center font-bold font-coiny text-white pb-5 pt-24"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}

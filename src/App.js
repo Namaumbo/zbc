@@ -22,7 +22,7 @@ function App() {
           <Route path="/ministries" element={<MinistriesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/sermons" element={<SermonArchive />} />
+          <Route path="/services" element={<SermonArchive />} />
         </Routes>
         <FooterComponent/>
       </div>
