@@ -261,14 +261,14 @@ const LandingPage = () => {
           </div>
         </motion.div>
         <div className="max-w-7xl mx-auto">
-          <div className="mt-2 grid grid-cols-3 gap-4">
-            {[1, 2, 3].map((_) => {
+          <div className="mt-2 grid grid-cols-3">
+            {["evangelism.jpg", "bg-5.jpg", "bg-3.jpg"].map((pix) => {
               return (
-                <div className="flex flex-col items-center p-4  ">
+                <div className="flex flex-col items-center p-1">
                   <img
-                    src="/evangelism.jpg"
+                    src={pix}
                     alt="Church"
-                    className="rounded-sm"
+                    className="rounded-md w-full h-64 object-cover"
                   />
                   <h3 className={secondaryHeadingStyle}>Next sermon</h3>
                   <p className={secondarylandingpageParagraphy}>
@@ -279,7 +279,7 @@ const LandingPage = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-md font-semibold hover:bg-orange-600 transition-colors"
+                    className="mt-4 px-6 py-4 bg-gray-500 text-white rounded-md font-semibold hover:bg-gray-600 transition-colors"
                   >
                     Learn More
                   </motion.button>
