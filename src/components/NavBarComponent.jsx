@@ -14,9 +14,9 @@ const NavBarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="bg-black sticky top-0 z-50 w-full pt-8 pb-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-black sticky top-0 z-50 w-full pt-5 pb-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-14">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           <div
             className="flex-shrink-0 cursor-pointer"
             onClick={() => (window.location.href = "/")}
@@ -77,7 +77,7 @@ const NavBarComponent = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="block text-white hover:text-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-sm sm:text-base font-medium"              >
+                className="block text-white hover:text-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-sm sm:text-base font-medium lg:px-2">
                 {link.text}
               </a>
             ))}

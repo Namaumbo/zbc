@@ -38,15 +38,14 @@ const LandingPage = () => {
     };
   }, []);
   const headingStyle =
-    "font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold p-5";
+    "font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold p-3 sm:p-4 md:p-5";
   const secondaryHeadingStyle =
     "font-heading text-xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl font-bold p-5";
 
   const landingpageParagraphy =
-    "text-left text-sm sm:text-base md:text-lg lg:text-xl font-paragraph";
-
+    "text-left text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl font-paragraph";
   const secondarylandingpageParagraphy =
-    " text-left text-sm sm:text-base md:text-lg lg:text-xl font-paragraph";
+    "text-left text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl font-paragraph";
   return (
     <>
       <div
@@ -80,7 +79,9 @@ const LandingPage = () => {
         </motion.div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 pr-4">
+      <div
+        className="px-4 sm:px-6 lg:px-14 max-w-7xl mx-auto flex flex-row justify-center items-center "
+      >
         <div className="w-1/2">
           <motion.div className="relative h-[900px] overflow-hidden mt-4">
             <motion.div
@@ -115,8 +116,7 @@ const LandingPage = () => {
         </div>
         <div className="w-1/2">
           <section className="p-4 text-center">
-            <h1 className="font-heading text-3xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold p-5">
-              {" "}
+            <h1 className="font-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
               Our Mission & Values
             </h1>
             <p className={landingpageParagraphy}>
@@ -183,7 +183,7 @@ const LandingPage = () => {
         <div className="flex flex-col md:flex-row justify-center items-center p-4">
           <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
             <img
-              src="/church.png"
+              src="/christianity.png"
               alt="Church"
               className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
             />
@@ -195,7 +195,7 @@ const LandingPage = () => {
           </div>
           <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
             <img
-              src="/day.png"
+              src="/community.png"
               alt="Church"
               className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
             />
@@ -207,7 +207,7 @@ const LandingPage = () => {
           </div>
           <div className="flex flex-col items-center md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
             <img
-              src="/bible.png"
+              src="/church_2.png"
               alt="Church"
               className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
             />
@@ -220,7 +220,7 @@ const LandingPage = () => {
           </div>
           <div className="flex flex-col items-center md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
             <img
-              src="/bible.png"
+              src="/growth-plant.png"
               alt="Church"
               className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
             />
@@ -251,7 +251,7 @@ const LandingPage = () => {
             </h1>
           </div>
           <div className="w-full md:w-1/2 ">
-            <p className="font-paragraph text-base sm:text-lg lg:text-xl text-center md:text-left">
+            <p className={landingpageParagraphy}>
               Zomba Baptist Church is committed to making a positive impact
               through our outreach initiatives. We engage in various community
               service programs that aim to spread love, hope, and the teachings
