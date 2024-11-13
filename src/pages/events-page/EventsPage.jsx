@@ -1,7 +1,6 @@
 import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import { motion } from "framer-motion";
-import { Button } from "flowbite-react"
 const EventsPage = () => {
   return (
     <div>
