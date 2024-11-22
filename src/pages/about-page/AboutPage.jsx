@@ -1,5 +1,8 @@
 import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
+import TeamComponent from "../../components/TeamComponent";
+import { Button } from "flowbite-react";
+
 
 const AboutPage = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -54,13 +57,14 @@ const AboutPage = () => {
             we desire to be a Jesus church.
           </h1>
           <p className="mb-6 font-paragraph">
-            We want our church to encounter the living God, be a place of
-            discipleship, serve the local community and the world creating
-            impact through the name of Jesus Christ.
+            Zomba bapist stared in 1979 by the Southen Baptist Convention
+            Missionaries. Late Pastor Kachase Gama, together with the
+            Missionaries, planted the church right in the city of zomba. Late
+            Pastor Kachasu Gama became the first pastor.In its first days, the
+            church was meeting in a garage of one of the Missionaries before
+            relocating to Zomba Community ground.
           </p>
-          <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
-            PLAN YOUR VISIT
-          </button>
+          <Button>Learn More</Button>
         </div>
         <div className="md:w-1/2 ">
           <video controls className="w-full">
@@ -74,40 +78,28 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold  text-white font-coiny text-center">
             Our Team
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <img
-                src={`${process.env.PUBLIC_URL}/team-member-1.jpg`}
-                alt="Team Member 1"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold mb-2 text-white font-coiny">
-                John Doe
-              </h3>
-              <p className="text-gray-400 font-paragraph">Senior Pastor</p>
-            </div>
-            <div className="text-center">
-              <img
-                src={`${process.env.PUBLIC_URL}/team-member-2.jpg`}
-                alt="Team Member 2"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold mb-2 text-white font-coiny">
-                Jane Smith
-              </h3>
-              <p className="text-gray-400 font-paragraph">Worship Leader</p>
-            </div>
-            <div className="text-center">
-              <img
-                src={`${process.env.PUBLIC_URL}/team-member-3.jpg`}
-                alt="Team Member 3"
-                className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold mb-2 text-white font-coiny">
-                Mike Johnson
-              </h3>
-              <p className="text-gray-400 font-paragraph">Youth Pastor</p>
-            </div>
+          <div>
+            <TeamComponent
+              fullName="Pastor Richard Makhenjera"
+              position="Resident Pastor"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
+            <TeamComponent
+              fullName="Gartron Kamchedzera"
+              position="Chief Elder"
+            />
+            <TeamComponent fullName="Kelvin Gunya" position="Elder" />
+            <TeamComponent fullName="Mary Mlenga" position="Elder" />
+            <TeamComponent fullName="Nales Petro" position="Deaconess" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-1">
+            <TeamComponent fullName="Laston Simenti" position="Chief Deacon" />
+            <TeamComponent fullName="Humphrey Topesa" position="Deacon" />
+            <TeamComponent fullName="Mark Chande" position="Deacon" />
+            <TeamComponent fullName="Albert Botomai" position="Deacon" />
+            <TeamComponent fullName="Chrissy Kubwalo" position="Deaconess" />
+            <TeamComponent fullName="Sakina ktunga" position="Deaconess" />
           </div>
         </div>
       </div>
@@ -119,8 +111,8 @@ const AboutPage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
-                  Faith in God
+                <h3 className="text-xl font-semibold mb-4 text-black">
+                  Priesthood of all believers
                 </h3>
                 <p className="text-gray-700 font-paragraph">
                   We believe in one God, eternally existing in three persons:
@@ -128,8 +120,8 @@ const AboutPage = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
-                  The Bible
+                <h3 className="text-xl font-semibold mb-4 text-black">
+                  Autonomy of the Local church
                 </h3>
                 <p className="text-gray-700 font-paragraph">
                   We believe the Bible is the inspired and infallible Word of
@@ -137,17 +129,17 @@ const AboutPage = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
+                <h3 className="text-xl font-semibold mb-4 text-black">
                   Salvation
                 </h3>
                 <p className="text-gray-700 font-paragraph">
-                  We believe salvation is a gift of God's grace, received
-                  through faith in Jesus Christ alone.
+                  We believe salvation is a is by grace through faith and Christ
+                  alone.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
-                  The Church
+                <h3 className="text-xl font-semibold mb-4 text-black">
+                  Authority of the Bible
                 </h3>
                 <p className="text-gray-700 font-paragraph">
                   We believe the Church is the body of Christ, called to
@@ -155,8 +147,8 @@ const AboutPage = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
-                  Mission
+                <h3 className="text-xl font-semibold mb-4 text-black">
+                  Two Ordinaces (Baptist and Lords's Supper)
                 </h3>
                 <p className="text-gray-700 font-paragraph">
                   We believe in sharing the love of Christ and making disciples
@@ -164,8 +156,8 @@ const AboutPage = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4 text-black font-coiny">
-                  Holy Spirit
+                <h3 className="text-xl font-semibold mb-4 text-black">
+                  Individaul sour liberty of the believer
                 </h3>
                 <p className="text-gray-700 font-paragraph">
                   We believe in the indwelling and empowering presence of the
