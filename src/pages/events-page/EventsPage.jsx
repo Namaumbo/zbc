@@ -1,6 +1,6 @@
 import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import EventCardComponent from "../../components/EventCardComponent";
 import { Button } from "flowbite-react";
 const EventsPage = () => {
