@@ -15,7 +15,7 @@ import FooterComponent from './components/FooterComponent.jsx';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className=" bg-gray-100">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
