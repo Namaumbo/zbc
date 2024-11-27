@@ -116,23 +116,32 @@ const EventsPage = () => {
     <>
       <NavBarComponent />
       <div
-        className="relative h-[30rem] mb-8 bg-cover bg-center"
+        className="relative h-[40rem] mb-8 bg-cover bg-center"
         style={{ backgroundImage: "url('/events.jpg')" }}
       >
-        <div className="absolute inset-0 bg-white/30">
-          <div className="flex flex-col items-start justify-center h-full text-left px-4">
-            <h2 className="text-5xl md:text-7xl sm:text-3xl xs:text-3xl font-bold mb-4">Church Events</h2>
-            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl">
-              Join us for these exciting upcoming events at our church. We'd
-              love to have you participate and be part of our community.
+        <div className="absolute inset-0 bg-white/30 ">
+          <div className="flex flex-col items-center justify-center h-full text-center px-4">
+            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold mb-4 w-[34rem] text-white">
+              Join Our Community Church Ministries
+            </h2>
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white">
+              At Zomba Baptist, we are dedicated to nurturing a supportive
+              environment where everyone feels welcomed and valued. Join us in
+              our mission to spread love and hope.
             </p>
-            <Button className="mt-4">Learn More</Button>
+            <Button className="mt-4 p-3 bg-[#008cd0]">Learn More</Button>
           </div>
         </div>
       </div>
       {/*--------------- HERO SECTION -------------------- */}
 
       {/* EVENTS SECTION  */}
+      <div
+        style={{
+          backgroundColor: "#e2e2e2",
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.83' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 gap-10">
           {[1, 2, 3].map((index, key) => {

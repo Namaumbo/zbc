@@ -3,7 +3,7 @@ import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 const FooterComponent = () => {
   return (
-    <footer className=" max-auto ">
+    <footer className=" max-auto  bg-[#989898]">
       <div className="flex flex-row justify-center items-center">
         <div className="">
           <img src="/zbc_logo.png" alt="ZBC Logo" className="h-40 w-40" />

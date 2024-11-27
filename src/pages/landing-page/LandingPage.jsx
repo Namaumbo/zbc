@@ -43,9 +43,9 @@ const LandingPage = () => {
     "font-heading text-xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl font-bold p-5";
 
   const landingpageParagraphy =
-    "text-left text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl font-paragraph";
+    "text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-basel font-paragraph";
   const secondarylandingpageParagraphy =
-    "text-left text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-2xl font-paragraph";
+    "text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base font-paragraph";
   return (
     <>
       <div
