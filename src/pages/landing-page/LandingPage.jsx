@@ -79,9 +79,7 @@ const LandingPage = () => {
         </motion.div>
       </div>
 
-      <div
-        className="px-4 sm:px-6 lg:px-14 max-w-7xl mx-auto flex flex-row justify-center items-center "
-      >
+      <div className="px-4 sm:px-6 lg:px-14 max-w-7xl mx-auto flex flex-row justify-center items-center ">
         <div className="w-1/2">
           <motion.div className="relative h-[900px] overflow-hidden mt-4">
             <motion.div
@@ -333,7 +331,9 @@ const LandingPage = () => {
               bonds and spread love. Your involvement is crucial in carrying out
               our mission and supporting those in need.
             </p>
-            <DatePickerComponent />
+            <div className="text-center">
+              <DatePickerComponent />
+            </div>
           </div>
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 md:pr-8 font-heading text-center md:text-left">
@@ -344,7 +344,7 @@ const LandingPage = () => {
               whileTap={{ scale: 0.95 }}
               className="px-6 py-4 bg-gray-500 text-white rounded-md font-semibold hover:bg-gray-700 transition-colors"
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2 text-center">
                 <FiMapPin size={25} /> <span>Ask For Directions</span>
               </div>
             </motion.button>
