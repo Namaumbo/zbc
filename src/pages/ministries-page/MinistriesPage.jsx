@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import { Button } from "flowbite-react";
 import MinistryComponent from "../../components/MinistryComponent";
