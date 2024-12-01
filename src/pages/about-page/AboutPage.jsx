@@ -3,14 +3,13 @@ import NavBarComponent from "../../components/NavBarComponent";
 import TeamComponent from "../../components/TeamComponent";
 import { Button } from "flowbite-react";
 
-
 const AboutPage = () => {
-  const [scrollPosition, setScrollPosition] = React.useState(0);
+  // const [scrollPosition, setScrollPosition] = React.useState(0);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
+      // const position = window.pageYOffset;
+      // setScrollPosition(position);
     };
     window.addEventListener("scroll", handleScroll, { passive: false });
 
@@ -21,31 +20,28 @@ const AboutPage = () => {
 
   return (
     <>
-      <div
-        className="about-page"
-        style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/evangelism.jpg)`,
-          backgroundAttachment: "scroll",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          minHeight: "80vh",
-          backgroundPosition: `center ${scrollPosition * -0.5}px`,
-        }}
-      >
+      <div className="relative bg-white">
         <NavBarComponent />
-        <div className="p-8 mx-auto my-8 max-w-3xl">
-          <h1 className="text-center mb-4 text-2xl sm:text-3xl md:text-4xl font-bold font-coiny text-orange-700">
-            About Us
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed font-paragraph text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            auctor, nunc id aliquam tincidunt, nisl nunc tincidunt urna, nec
-            tincidunt nunc nunc id nunc. Sed euismod, nunc id aliquam tincidunt,
-            nisl nunc tincidunt urna, nec tincidunt nunc nunc id nunc. Sed
-            euismod, nunc id aliquam tincidunt, nisl nunc tincidunt urna, nec
-            tincidunt nunc nunc id nunc.
-          </p>
+       
+      <div
+        className="relative h-[40rem] mb-8 bg-cover bg-center"
+        style={{ backgroundImage: "url('/events.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-white/30 ">
+          <div className="flex flex-col items-center justify-center h-full text-center px-4">
+            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold mb-4 w-[34rem] text-white">
+              Join Our Community Church Ministries
+            </h2>
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white">
+              Experience the joy of giving back and making a difference. At
+              Zomba Baptist, we are dedicated to spreading love and hope through
+              our community service programs. Get involved and help us create a
+              positive impact.
+            </p>
+            <Button className="mt-4 p-3 bg-[#008cd0]">Learn More</Button>
+          </div>
         </div>
+      </div>
       </div>
 
       <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">

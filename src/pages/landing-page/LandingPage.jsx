@@ -258,8 +258,8 @@ const LandingPage = () => {
             </p>
           </div>
         </motion.div>
-        <div className="max-w-7xl mx-auto">
-          <div className="mt-2 grid grid-cols-3">
+        <div className=" max-w-7xl mx-auto">
+          <div className="mt-2 grid grid-cols-3 container mx-auto">
             {["evangelism.jpg", "bg-5.jpg", "bg-3.jpg"].map((pix) => {
               return (
                 <div className="flex flex-col items-center p-1">
@@ -288,7 +288,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="mt-16">
+      <div className=" container mx-auto mt-16">
         <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 md:pr-8 font-heading text-center md:text-left">
@@ -322,7 +322,7 @@ const LandingPage = () => {
         </motion.div>
       </div>
 
-      <div className="mt-16">
+      <div className="container mx-auto mt-16">
         <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-1/2 ">
             <p className="font-paragraph text-base sm:text-lg lg:text-xl text-center md:text-left">
