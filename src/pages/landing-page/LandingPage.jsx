@@ -80,7 +80,7 @@ const LandingPage = () => {
       </div>
 
       <div className="px-4 sm:px-6 lg:px-14 max-w-7xl mx-auto flex flex-row justify-center items-center ">
-        <div className="w-1/2">
+        <div className="hidden md:block w-1/2">
           <motion.div className="relative h-[900px] overflow-hidden mt-4">
             <motion.div
               animate={{
@@ -111,8 +111,7 @@ const LandingPage = () => {
               />
             </motion.div>
           </motion.div>
-        </div>
-        <div className="w-1/2">
+        </div>        <div className="w-full md:w-1/2">
           <section className="p-4 text-center">
             <h1 className="font-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
               Our Mission & Values
@@ -124,8 +123,8 @@ const LandingPage = () => {
               spiritual growth among our members.
             </p>
           </section>
-          <div className="flex flex-row items-center justify-center">
-            <div className="p-4 w-1/2 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <div className="p-4 w-full md:w-1/2 text-center">
               <motion.h5
                 ref={ref}
                 className={headingStyle}
@@ -140,7 +139,7 @@ const LandingPage = () => {
                 living out our faith and supporting one another.
               </p>
             </div>
-            <div className="p-4 w-1/2 text-center">
+            <div className="p-4 w-full md:w-1/2 text-center">
               <h5 className={headingStyle}>
                 <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
                 outreach programs
@@ -151,8 +150,8 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-center">
-            <div className="p-4 w-1/2 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <div className="p-4 w-full md:w-1/2 text-center">
               <h5 className={headingStyle}>
                 <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
                 years
@@ -163,7 +162,7 @@ const LandingPage = () => {
                 spiritual journeys.
               </p>
             </div>
-            <div className="p-4 w-1/2 text-center">
+            <div className="p-4 w-full md:w-1/2 text-center">
               <h5 className={headingStyle}>
                 <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
                 ministries
@@ -174,8 +173,7 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </div>      </div>
 
       <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 mt-10 ">
         <div className="flex flex-col md:flex-row justify-center items-center p-4">
@@ -235,7 +233,7 @@ const LandingPage = () => {
       <div className="max-w-7xl mx-auto mt-8 flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Our Community Speaks</h1>
 
-        <div className="grid grid-cols-3 gap-4 p-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-8">
           {[1, 2, 3, 4, 5].map((_) => {
             return <UserCardComponent />;
           })}
@@ -259,7 +257,7 @@ const LandingPage = () => {
           </div>
         </motion.div>
         <div className=" max-w-7xl mx-auto">
-          <div className="mt-2 grid grid-cols-3 container mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-8">
             {["evangelism.jpg", "bg-5.jpg", "bg-3.jpg"].map((pix) => {
               return (
                 <div className="flex flex-col items-center p-1">

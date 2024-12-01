@@ -121,20 +121,19 @@ const EventsPage = () => {
       >
         <div className="absolute inset-0 bg-white/30 ">
           <div className="flex flex-col items-center justify-center h-full text-center px-4">
-            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold mb-4 w-[34rem] text-white">
+            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-2xl font-bold mb-4 w-full md:w-[34rem] text-white px-4">
               Join Our Community Church Ministries
             </h2>
-            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white">
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white px-4">
               At Zomba Baptist, we are dedicated to nurturing a supportive
               environment where everyone feels welcomed and valued. Join us in
               our mission to spread love and hope.
             </p>
-            <Button className="mt-4 p-3 bg-[#008cd0]">Learn More</Button>
+            <Button className="mt-4 p-3 bg-[#008cd0] text-base sm:text-lg">Learn More</Button>
           </div>
         </div>
       </div>
       {/*--------------- HERO SECTION -------------------- */}
-
       {/* EVENTS SECTION  */}
       <div
         style={{
@@ -143,7 +142,7 @@ const EventsPage = () => {
         }}
       ></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-10">
           {[1, 2, 3].map((index, key) => {
             return (
               <div key={key}>
@@ -152,8 +151,7 @@ const EventsPage = () => {
             );
           })}
         </div>
-      </div>
-    </>
+      </div>    </>
   );
 };
 
