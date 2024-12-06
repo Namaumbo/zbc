@@ -9,7 +9,17 @@ module.exports = {
         title: ["Oswald", "sans-serif"],
         welcome: ["Zeyada", "cursive"],
         paragraph: ["Poppins", "sans-serif"],
-        heading: ["Figtree", "sans-serif"],
+        heading: ["Poppins", "sans-serif"],
+        heading_secondary :[ "Raleway", "sans-serif"]
+      },
+     
+
+      colors: {
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        accent: "var(--accent-color)",
+        textColor: "var(--text-color)",
+        bgcolor: "var(--background-color)",
       },
     },
   },
