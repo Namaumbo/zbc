@@ -27,11 +27,7 @@ export function CarouselComponent() {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = React.useState(0);
 
-  const handleSlideChange = (newIndex) => {
-    setActiveIndex(newIndex);
-  };
   return (
     <div className="h-[40vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
       <Carousel
@@ -39,11 +35,11 @@ export function CarouselComponent() {
         indicators={true}
         leftControl=""
         rightControl=""
-        onSlideChange={(e) => handleSlideChange(e.activeIndex)}
       >
         {carouselContent.map((item, index) => (
           <div key={index} className="h-full flex items-center justify-center">
             <AnimatePresence mode="wait">
+              
               <motion.div
                 key={`carousel-item-${index}`}
                 initial={{ opacity: 0, y: 100 }}
