@@ -45,7 +45,7 @@ export function CarouselComponent() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -30 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 1}}
                 className="flex flex-col items-center"
               >
                 <h1 className="font-heading text-white text-4xl sm:text-6xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold mb-4">
