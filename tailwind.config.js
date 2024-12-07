@@ -10,9 +10,8 @@ module.exports = {
         welcome: ["Zeyada", "cursive"],
         paragraph: ["Poppins", "sans-serif"],
         heading: ["Poppins", "sans-serif"],
-        heading_secondary :[ "Raleway", "sans-serif"]
+        heading_secondary: ["Raleway", "sans-serif"],
       },
-     
 
       colors: {
         primary: "var(--primary-color)",
@@ -20,6 +19,8 @@ module.exports = {
         accent: "var(--accent-color)",
         textColor: "var(--text-color)",
         bgcolor: "var(--background-color)",
+        semi_heading_color: "var(--semi-heading-color)",
+        brand_color: "var(--brand-color)",
       },
     },
   },

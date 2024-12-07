@@ -39,6 +39,7 @@ export function CarouselComponent() {
         {carouselContent.map((item, index) => (
           <div key={index} className="h-full flex items-center justify-center">
             <AnimatePresence mode="wait">
+              
               <motion.div
                 key={`carousel-item-${index}`}
                 initial={{ opacity: 0, y: 100 }}

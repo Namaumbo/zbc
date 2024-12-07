@@ -10,6 +10,7 @@ import UserCardComponent from "../../components/UserCardComponent";
 import CountUp from "react-countup";
 import { DatePickerComponent } from "../../components/DatePickerComponent";
 import { FiMapPin } from "react-icons/fi";
+import EmpoweringComponent from "../../components/landing/EmpoweringComponent";
 
 const LandingPage = () => {
   const { scrollY } = useScroll();
@@ -38,12 +39,12 @@ const LandingPage = () => {
     };
   }, []);
   const headingStyle =
-    "font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold p-3 sm:p-4 md:p-5";
+    " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold p-3 sm:p-4 md:p-5";
   const secondaryHeadingStyle =
     "font-heading text-xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl font-bold p-5";
 
   const landingpageParagraphy =
-    "text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-basel font-paragraph";
+    " text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-basel font-paragraph";
   const secondarylandingpageParagraphy =
     "text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base font-paragraph";
   return (
@@ -111,9 +112,10 @@ const LandingPage = () => {
               />
             </motion.div>
           </motion.div>
-        </div>        <div className="w-full md:w-1/2">
+        </div>
+        <div className="w-full md:w-1/2">
           <section className="p-4 text-center">
-            <h1 className="font-heading text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
+            <h1 className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
               Our Mission & Values
             </h1>
             <p className={landingpageParagraphy}>
@@ -173,7 +175,8 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-        </div>      </div>
+        </div>
+      </div>
 
       <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 mt-10 ">
         <div className="flex flex-col md:flex-row justify-center items-center p-4">
@@ -231,70 +234,43 @@ const LandingPage = () => {
       </div>
 
       <div className="max-w-7xl mx-auto mt-8 flex flex-col justify-center items-center">
-        <h1 className={headingStyle}>Our Community Speaks</h1>
+        <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-8">
-          {[1, 2, 3, 4, 5].map((_) => {
-            return <UserCardComponent />;
-          })}
+        <div className="w-full">
+          <UserCardComponent />
         </div>
       </div>
-      <div>
-        <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-          <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 md:pr-8 font-heading text-center md:text-left">
-              Empowering Our Community Through Service
-            </h1>
-          </div>
-          <div className="w-full md:w-1/2 ">
-            <p className={landingpageParagraphy}>
-              Zomba Baptist Church is committed to making a positive impact
-              through our outreach initiatives. We engage in various community
-              service programs that aim to spread love, hope, and the teachings
-              of Christ. Join us in our mission to foster spiritual growth and
-              support those in need.
-            </p>
-          </div>
-        </motion.div>
-        <div className=" max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-8">
-            {["evangelism.jpg", "bg-5.jpg", "bg-3.jpg"].map((pix) => {
-              return (
-                <div className="flex flex-col items-center p-1">
-                  <img
-                    src={pix}
-                    alt="Church"
-                    className="rounded-md w-full h-64 object-cover"
-                  />
-                  <h3 className={secondaryHeadingStyle}>Next sermon</h3>
-                  <p className={secondarylandingpageParagraphy}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="mt-4 px-6 py-4 bg-gray-500 text-white rounded-md font-semibold hover:bg-gray-600 transition-colors"
-                  >
-                    Learn More
-                  </motion.button>
-                </div>
-              );
-            })}
-          </div>
+   
+      <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color ">
+            Empowering Our Community Through Service
+          </h1>
         </div>
+        <div className="w-full md:w-1/2">
+          <p className="font-heading_secondary">
+            Zomba Baptist Church is committed to making a positive impact
+            through our outreach initiatives. We engage in various community
+            service programs that aim to spread love, hope, and the teachings of
+            Christ. Join us in our mission to foster spiritual growth and
+            support those in need.
+          </p>
+        </div>
+      </motion.div>
+
+      <div className="">
+        <EmpoweringComponent />
       </div>
 
       <div className=" container mx-auto mt-16">
         <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 md:pr-8 font-heading text-center md:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color">
               Join Our Community Through Service
             </h1>
           </div>
           <div className="w-full md:w-1/2 ">
-            <p className="font-paragraph text-base sm:text-lg lg:text-xl text-center md:text-left">
+            <p className="font-heading_secondary">
               Discover how you can make a difference in our church and
               community. Participate in various activities that strengthen our
               bonds and spread love. Your involvement is crucial in carrying out
