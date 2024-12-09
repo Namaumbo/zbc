@@ -178,7 +178,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 mt-10 ">
+      {/* <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 mt-10 ">
         <div className="flex flex-col md:flex-row justify-center items-center p-4">
           <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
             <img
@@ -231,7 +231,7 @@ const LandingPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto mt-8 flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
