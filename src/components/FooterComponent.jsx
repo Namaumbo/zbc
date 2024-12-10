@@ -36,7 +36,7 @@ const FooterComponent = () => {
 
         <div className="flex justify-center md:mr-10 md:ml-10 p-5 gap-4">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/zombabaptist/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full border-2 border-gray-400 bg-gray-200 hover:bg-gray-300"

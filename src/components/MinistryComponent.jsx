@@ -32,7 +32,7 @@ export default function MinistryComponent() {
             transition={{ duration: 2 }}
           >
             <img
-              src="/kids.jpg"
+              src={ministry.coverPage}
               alt="Children's Ministry"
               className="w-full h-full shadow-sm rounded-sm"
             />

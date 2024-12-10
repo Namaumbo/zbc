@@ -23,6 +23,7 @@
   --spacing-unit: 8px;
   --border-radius: 4px;
   --semi-heading-color:#1a202c;
+  --second-bland-color: #085bb4;
 }
 
 @tailwind base;

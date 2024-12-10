@@ -15,7 +15,7 @@ const ParallaxScroll = () => {
       >
         <div className="absolute inset-0 bg-white/30 ">
           <div className="flex flex-col items-center justify-center h-full text-center px-4">
-            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-3xl font-bold mb-4 w-[34rem] text-white">
+            <h2 className="font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
               Join Our Community Church Ministries
             </h2>
             <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white">

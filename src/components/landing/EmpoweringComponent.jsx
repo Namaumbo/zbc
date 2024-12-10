@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 const EmpoweringComponent = () => {
   const content = [

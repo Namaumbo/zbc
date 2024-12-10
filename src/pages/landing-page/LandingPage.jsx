@@ -11,6 +11,7 @@ import CountUp from "react-countup";
 import { DatePickerComponent } from "../../components/DatePickerComponent";
 import { FiMapPin } from "react-icons/fi";
 import EmpoweringComponent from "../../components/landing/EmpoweringComponent";
+import ChurchActivityComponent from "../../components/landing/ChurchActivityComponent";
 
 const LandingPage = () => {
   const { scrollY } = useScroll();
@@ -40,13 +41,6 @@ const LandingPage = () => {
   }, []);
   const headingStyle =
     " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold p-3 sm:p-4 md:p-5";
-  const secondaryHeadingStyle =
-    "font-heading text-xl sm:text-1xl md:text-2xl lg:text-2xl xl:text-2xl font-bold p-5";
-
-  const landingpageParagraphy =
-    " text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-basel font-paragraph";
-  const secondarylandingpageParagraphy =
-    "text-left text-xs sm:text-sm md:text-base lg:text-base xl:text-base 2xl:text-base font-paragraph";
   return (
     <>
       <div
@@ -80,45 +74,33 @@ const LandingPage = () => {
         </motion.div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-14 max-w-7xl mx-auto flex flex-row justify-center items-center ">
+      <div className="px-4 sm:px-6 lg:px-14 container mx-auto flex flex-row justify-center items-center ">
         <div className="hidden md:block w-1/2">
-          <motion.div className="relative h-[900px] overflow-hidden mt-4">
+          <motion.div className="relative h-[60%] overflow-hidden mt-4">
             <motion.div
               animate={{
-                y: [0, -900],
+                x: [0, -30, 0],
               }}
               transition={{
-                duration: 80,
-                repeat: Infinity,
-                ease: "linear",
+                duration: 4,
               }}
               className="flex flex-col"
             >
               <img
-                src="bg-3.jpg"
+                src="https://scontent.fblz3-1.fna.fbcdn.net/v/t39.30808-6/324774006_912274986631434_7766484045958137929_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGvoAlIpRFCFNkqUgLAK-pyAPkgbvZgjQYA-SBu9mCNBpJAvQEyecjd6rq0O12mYhQJ3SOJmtICbVJjYjwmqZUV&_nc_ohc=FN_2cAQja2kQ7kNvgH2uiWW&_nc_zt=23&_nc_ht=scontent.fblz3-1.fna&_nc_gid=Al7nBLtNPexfzwgbHR5kU4k&oh=00_AYAzzb5ql3SyLnjf8kst-eS0Jryiyx71nCbQJAYHZYhtMQ&oe=675E1767                                                                                                                                                                                                                                                                                                                                       "
                 alt="Evangelism"
-                className="w-full h-full object-cover p-2"
-              />
-              <img
-                src="bg-5.jpg"
-                alt="Evangelism"
-                className="w-full h-full object-cover p-2"
-              />
-
-              <img
-                src="evangelism.jpg"
-                alt="Evangelism"
-                className="w-full h-full object-cover p-2"
+                className="w-full h-full object-cover p-2 rounded-lg shadow-lg border"
               />
             </motion.div>
+            <p className=" font-heading font-semibold text-center mt-4">Pastor R Makhenjera and Wife</p>
           </motion.div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2  mt-[-10%]">
           <section className="p-4 text-center">
             <h1 className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
               Our Mission & Values
             </h1>
-            <p className={landingpageParagraphy}>
+            <p className="font-heading_secondary">
               Zomba Baptist Church is dedicated to spreading love, hope, and the
               teachings of Christ. Our mission is to foster a strong community
               of faith, providing support and guidance while encouraging
@@ -136,7 +118,7 @@ const LandingPage = () => {
                 <CountUp end={500} duration={2.5} start={isInView ? null : 0} />{" "}
                 members
               </motion.h5>
-              <p className={landingpageParagraphy}>
+              <p className="font-heading_secondary">
                 With over 500 members, we are a thriving community committed to
                 living out our faith and supporting one another.
               </p>
@@ -146,7 +128,7 @@ const LandingPage = () => {
                 <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
                 outreach programs
               </h5>
-              <p className={landingpageParagraphy}>
+              <p className="font-heading_secondary">
                 We engage in numerous outreach programs, impacting the lives of
                 100 individuals and families in our community each year.
               </p>
@@ -158,7 +140,7 @@ const LandingPage = () => {
                 <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
                 years
               </h5>
-              <p className={landingpageParagraphy}>
+              <p className="font-heading_secondary">
                 For over 20 years, Zomba Baptist Church has been a beacon of
                 hope and faith in our community, guiding individuals on their
                 spiritual journeys.
@@ -169,7 +151,7 @@ const LandingPage = () => {
                 <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
                 ministries
               </h5>
-              <p className={landingpageParagraphy}>
+              <p className="font-heading_secondary">
                 We offer 10 active ministries that cater to various needs,
                 ensuring everyone finds a place to grow and serve.
               </p>
@@ -178,73 +160,22 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* <div className="max-w-7xl mx-auto flex flex-row justify-center items-center p-5 mt-10 ">
-        <div className="flex flex-col md:flex-row justify-center items-center p-4">
-          <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
-            <img
-              src="/christianity.png"
-              alt="Church"
-              className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
-            />
-            <h3 className={secondaryHeadingStyle}>Weekly Service</h3>
-            <p className={secondarylandingpageParagraphy}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="flex flex-col items-center mb-8 md:mb-0 md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
-            <img
-              src="/community.png"
-              alt="Church"
-              className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
-            />
-            <h3 className={secondaryHeadingStyle}>Daily Devotion</h3>
-            <p className={secondarylandingpageParagraphy}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
-            <img
-              src="/church_2.png"
-              alt="Church"
-              className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
-            />
+      <div className="container mx-auto mt-8 flex flex-col justify-center items-center">
+        <ChurchActivityComponent />
+      </div>
 
-            <h3 className={secondaryHeadingStyle}>Latest Teaching</h3>
-            <p className={secondarylandingpageParagraphy}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="flex flex-col items-center md:mx-4 p-4 shadow-lg rounded-lg bg-white w-full md:w-1/3">
-            <img
-              src="/growth-plant.png"
-              alt="Church"
-              className="w-16 h-16 sm:w-18 sm:h-18 object-cover rounded-lg mb-4"
-            />
-
-            <h3 className={secondaryHeadingStyle}>Latest Teaching</h3>
-            <p className={secondarylandingpageParagraphy}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
-      <div className="max-w-7xl mx-auto mt-8 flex flex-col justify-center items-center">
+      <div className="container mx-auto mt-8 flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
 
         <div className="w-full">
           <UserCardComponent />
         </div>
       </div>
-   
-      <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+
+      <motion.div className="container mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
+        <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color ">
-            Empowering Our Community Through Service
+            Empowering Our Community Through Service & Hope
           </h1>
         </div>
         <div className="w-full md:w-1/2">
@@ -263,7 +194,7 @@ const LandingPage = () => {
       </div>
 
       <div className=" container mx-auto mt-16">
-        <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
+        <motion.div className="container  mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color">
               Join Our Community Through Service
@@ -280,7 +211,7 @@ const LandingPage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-4 bg-[#0e7490] text-white rounded-md font-semibold hover:bg-[#0e7490]transition-colors"
+                className="px-6 py-4 bg-second_brand_color text-white rounded-md font-semibold hover:bg-[#0e7490]transition-colors"
               >
                 Explore More
               </motion.button>
@@ -297,9 +228,24 @@ const LandingPage = () => {
       </div>
 
       <div className="container mx-auto mt-16">
-        <motion.div className="max-w-7xl mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
+        <motion.div className="container  mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
+          <div className="w-full md:w-1/2 mb-6 md:mb-0">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color">
+              Join us and Experience The Power of Faith This (Sun)Sunday!
+            </h1>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-4 bg-second_brand_color text-white rounded-md font-semibold hover:bg-gray-700 transition-colors mt-4"
+            >
+              <div className="flex items-center justify-center gap-2 text-center                                                                                                                                                                                                                                                                                                                                      ">
+                <FiMapPin size={25} /> <span>Ask For Directions</span>
+              </div>
+            </motion.button>
+          </div>
+
           <div className="w-full md:w-1/2 ">
-            <p className="font-paragraph text-base sm:text-lg lg:text-xl text-center md:text-left">
+            <p className=" font-heading_secondary">
               Discover how you can make a difference in our church and
               community. Participate in various activities that strengthen our
               bonds and spread love. Your involvement is crucial in carrying out
@@ -308,20 +254,6 @@ const LandingPage = () => {
             <div className="text-center">
               <DatePickerComponent />
             </div>
-          </div>
-          <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 md:pr-8 font-heading text-center md:text-left">
-              Join us and Experience The Power of Faith This (Sun)Sunday!
-            </h1>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-4 bg-gray-500 text-white rounded-md font-semibold hover:bg-gray-700 transition-colors"
-            >
-              <div className="flex items-center justify-center gap-2 text-center">
-                <FiMapPin size={25} /> <span>Ask For Directions</span>
-              </div>
-            </motion.button>
           </div>
         </motion.div>
       </div>
