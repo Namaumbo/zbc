@@ -1,97 +1,32 @@
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import NavBarComponent from "../../components/NavBarComponent";
-import { Button } from 'flowbite-react';
-
+import { Button } from "flowbite-react";
 
 const ContactPage = () => {
   return (
-    <div className="contact-page">
+    <div className="">
       <NavBarComponent />
-
-      <div className="bg-gradient-to-r from-[#160b14] to-black flex flex-col items-center justify-center pb-32 ">
-        <motion.h3
-          className="text-6xl text-center font-bold font-coiny text-white pb-5 pt-24"
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Contact Us
-        </motion.h3>
-
-        <motion.p
-          className="w-[50%] text-white font-paragraph text-center"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris.
-        </motion.p>
-      </div>
-
-      <motion.div
-        className="bg-gray-100 rounded-lg p-8 mx-auto"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.25 }}
+      <div
+        className="relative h-[40rem]  bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://scontent.fblz1-1.fna.fbcdn.net/v/t39.30808-6/324841664_480510607487998_4782025878627412943_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEYqMPLHiwKPINxuWhlOBwN_hKM9qjLGZf-Eoz2qMsZl2ftkK9WxFe3oo2T8uX0bjez9A4Rhv3AyQkObJaslo8S&_nc_ohc=l63UzaY8leYQ7kNvgGVLnkZ&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fblz1-1.fna&_nc_gid=AtIxDlhgkeil_GfdwjoVe8e&oh=00_AYBQAQuTAkqIpEvzXea95oFpputvfbThtLAdvwQ6toLNjQ&oe=675E6E98')",
+        }}
       >
-        <form className="max-w-md mx-auto">
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="name"
-            >
-              Name
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="name"
-              type="text"
-              placeholder="Your Name"
-            />
-          </div>
-          <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="email"
-            >
-              Email
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              id="email"
-              type="email"
-              placeholder="your@email.com"
-            />
-          </div>
-          <div className="mb-6">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              htmlFor="message"
-            >
-              Message
-            </label>
-            <textarea
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32"
-              id="message"
-              placeholder="Your message here..."
-            />
-          </div>
-          <div className="flex items-center justify-center">
-            <button
-              className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition-all duration-300 hover:scale-105"
-              type="submit"
-            >
-              Send Message
-            </button>
-            <Button default>
-        Click me
-      </Button>
-          </div>
-        </form>
-      </motion.div>
+        <div className="absolute inset-0 bg-blue-900/60">
+          <div className="flex flex-col items-center justify-center h-full text-center px-4">
+            <h2 className="font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
+              Get in Touch with Zomba Baptist Church
+            </h2>
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
+              We'd love to hear from you! Whether you have questions about our services,
+              want to join our community, or need spiritual guidance, our team is here
+              to help. Reach out to us through the contact information below.
+            </p>
+            <Button className="mt-4 p-2 bg-brand_color">Contact Us</Button>
+          </div>        </div>
+      </div>
     </div>
   );
 };

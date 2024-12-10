@@ -5,7 +5,7 @@ const EmpoweringComponent = () => {
   const content = [
     {
       title: "Next sermon",
-      imageUrl: "bg-3.jpg",
+      imageUrl: "https://scontent.fblz1-1.fna.fbcdn.net/v/t39.30808-6/324846389_690034912660064_147388300608665273_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH7X-KHfQSfCR49W3lAN7aQey9GtD7YWGd7L0a0PthYZ6awBNPD6uFv8q_d0aeUZKYb9QVnx28Zzvi83NYhCiST&_nc_ohc=VjJU6PEwHpkQ7kNvgF4HvBB&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fblz1-1.fna&_nc_gid=A7TVwLqvcEPS62lQ3N9TKi3&oh=00_AYDY9oz6f-x19GZY-IbL5u8uG8W8sFzm2NNfNVnu8n5EnQ&oe=675E8BF9",
       description:
         "Join us for our upcoming sermon series where we explore faith, community, and spiritual growth together. Find guidance for your spiritual journey.",
     },
