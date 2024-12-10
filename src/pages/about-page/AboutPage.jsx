@@ -19,6 +19,39 @@ const AboutPage = () => {
     };
   }, []);
 
+  const second_rank = [
+    { fullName: "Garton Kamchedzera", position: "Chief Elder" },
+    { fullName: "Kelvin Gunya", position: "Elder" },
+    { fullName: "Mary Mlenga", position: "Elder" },
+    { fullName: "Nales Petro", position: "Deaconess" },
+  ];
+  const third_rank = [
+    {
+      fullName: "Laston Simenti",
+      position: "Chief Deacon",
+    },
+    {
+      fullName: "Humphrey Topesa",
+      position: "Deacon",
+    },
+    {
+      fullName: "Mark Chande",
+      position: "Deacon",
+    },
+    {
+      fullName: "Albert Botomani",
+      position: "Deaconess",
+    },
+    {
+      fullName: "Chrissy Kubwalo",
+      position: "Deaconess",
+    },
+    {
+      fullName: "Sakina Mtunga",
+      position: "Deaconess",
+    },
+  ];
+
   return (
     <>
       <div className="">
@@ -76,8 +109,8 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="bg-black">
-        <div className="container mx-auto px-12 py-8">
-          <h2 className="text-3xl md:text-4xl font-bold  text-white font-coiny text-center">
+        <div className="container mx-auto py-8">
+          <h2 className="text-3xl md:text-4xl font-bold  text-white font-heading text-center">
             Our Team
           </h2>
           <div>
@@ -87,28 +120,33 @@ const AboutPage = () => {
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
-            <TeamComponent
-              fullName="Gartron Kamchedzera"
-              position="Chief Elder"
-            />
-            <TeamComponent fullName="Kelvin Gunya" position="Elder" />
-            <TeamComponent fullName="Mary Mlenga" position="Elder" />
-            <TeamComponent fullName="Nales Petro" position="Deaconess" />
+            {second_rank.map((person) => {
+              return (
+                <div>
+                  <TeamComponent
+                    fullName={person.fullName}
+                    position={person.position}
+                  />
+                </div>
+              );
+            })}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-1">
-            <TeamComponent fullName="Laston Simenti" position="Chief Deacon" />
-            <TeamComponent fullName="Humphrey Topesa" position="Deacon" />
-            <TeamComponent fullName="Mark Chande" position="Deacon" />
-            <TeamComponent fullName="Albert Botomai" position="Deacon" />
-            <TeamComponent fullName="Chrissy Kubwalo" position="Deaconess" />
-            <TeamComponent fullName="Sakina ktunga" position="Deaconess" />
+            {third_rank.map((person, index) => {
+              return (
+                <div key={index}>
+                  <TeamComponent
+                    fullName={person.fullName}
+                    position={person.position}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
       <div>
-        <div className="bg-gray-100">
-          <CoreValuesComponent />
-        </div>
+        <CoreValuesComponent />
       </div>
     </>
   );

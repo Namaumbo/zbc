@@ -40,7 +40,7 @@ const LandingPage = () => {
     };
   }, []);
   const headingStyle =
-    " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold p-3 sm:p-4 md:p-5";
+    " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold ";
   return (
     <>
       <div
@@ -78,11 +78,19 @@ const LandingPage = () => {
         <div className="hidden md:block w-1/2">
           <motion.div className="relative h-[60%] overflow-hidden mt-4">
             <motion.div
-              animate={{
-                x: [0, -30, 0],
-              }}
+              ref={ref}
+              initial={{ opacity: 0, x: -50 }}
+              animate={
+                isInView
+                  ? {
+                      opacity: 1,
+                      x: 0,
+                    }
+                  : {}
+              }
               transition={{
-                duration: 4,
+                duration: 1,
+                ease: "easeOut",
               }}
               className="flex flex-col"
             >
@@ -92,7 +100,9 @@ const LandingPage = () => {
                 className="w-full h-full object-cover p-2 rounded-lg shadow-lg border"
               />
             </motion.div>
-            <p className=" font-heading font-semibold text-center mt-4">Pastor R Makhenjera and Wife</p>
+            <p className=" font-heading font-semibold text-center mt-4">
+              Pastor R Makhenjera and Wife
+            </p>
           </motion.div>
         </div>
         <div className="w-full md:w-1/2  mt-[-10%]">
@@ -160,11 +170,13 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-8 flex flex-col justify-center items-center">
+      <div className="container mx-auto mt-[5rem]  flex flex-col justify-center items-center">
+        <h1 className={headingStyle}>Church Activities Overview</h1>
+
         <ChurchActivityComponent />
       </div>
 
-      <div className="container mx-auto mt-8 flex flex-col justify-center items-center">
+      <div className="container mx-auto mt-5 flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
 
         <div className="w-full">
@@ -246,10 +258,10 @@ const LandingPage = () => {
 
           <div className="w-full md:w-1/2 ">
             <p className=" font-heading_secondary">
-              Discover how you can make a difference in our church and
-              community. Participate in various activities that strengthen our
-              bonds and spread love. Your involvement is crucial in carrying out
-              our mission and supporting those in need.
+              Come and experience the warmth of our welcoming church family.
+              Join us for uplifting worship services, meaningful connections,
+              and spiritual growth. Whether you're seeking peace, purpose, or
+              community, our doors are always open to welcome you home.
             </p>
             <div className="text-center">
               <DatePickerComponent />

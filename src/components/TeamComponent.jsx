@@ -10,10 +10,10 @@ const TeamComponent = ({ ...props }) => {
           alt="Team Member 3"
           className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
         />
-        <h3 className="text-xl font-semibold mb-2 text-white">
+        <h3 className="text-xl font-semibold mb-2 text-white font-heading_secondary">
           {fullName}
         </h3>
-        <p className="text-gray-400 font-paragraph">{position}</p>
+        <p className="text-gray-400 font-heading_secondary">{position}</p>
       </div>
     </div>
   );

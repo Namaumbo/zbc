@@ -9,7 +9,7 @@ import React from "react";
  */
 const NavBarComponent = () => {
   const linkStyle =
-    "text-white hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-semibold font-paragraph transition duration-300";
+    "text-white hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-heading transition duration-300";
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
