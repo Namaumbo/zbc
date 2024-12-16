@@ -60,8 +60,7 @@ const AboutPage = () => {
         <div
           className="relative h-[40rem] mb-8 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://scontent.fblz3-1.fna.fbcdn.net/v/t39.30808-6/309176895_462249699278431_5962512433144281611_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEqqFOmI-6NY8VRxUQkiW-TKWAOLzPeOkEpYA4vM946QZkKl5e7plA1NkPRgYWZy6puF9bd7IgTRC92uMYKWRL0&_nc_ohc=PvkwzleCwYAQ7kNvgHZlzFO&_nc_zt=23&_nc_ht=scontent.fblz3-1.fna&_nc_gid=AmSZyDt3OVmjj6US2EKRTDi&oh=00_AYAOIGjZ9sSr85k-G0ovkZ-y6ydcnzdDZjW91yoLSypjCA&oe=675E1F25')",
+            backgroundImage: "url(/congregation1.jpg)",
           }}
         >
           <div className="absolute inset-0 bg-blue-900/60">
@@ -99,7 +98,7 @@ const AboutPage = () => {
             church was meeting in a garage of one of the Missionaries before
             relocating to Zomba Community ground.
           </p>
-          <Button>Learn More</Button>
+          <Button className="bg-brand_color">Learn More</Button>
         </div>
         <div className="md:w-1/2 ">
           <video controls className="w-full">

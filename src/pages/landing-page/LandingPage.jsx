@@ -95,7 +95,7 @@ const LandingPage = () => {
               className="flex flex-col"
             >
               <img
-                src="https://scontent.fblz3-1.fna.fbcdn.net/v/t39.30808-6/324774006_912274986631434_7766484045958137929_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGvoAlIpRFCFNkqUgLAK-pyAPkgbvZgjQYA-SBu9mCNBpJAvQEyecjd6rq0O12mYhQJ3SOJmtICbVJjYjwmqZUV&_nc_ohc=FN_2cAQja2kQ7kNvgH2uiWW&_nc_zt=23&_nc_ht=scontent.fblz3-1.fna&_nc_gid=Al7nBLtNPexfzwgbHR5kU4k&oh=00_AYAzzb5ql3SyLnjf8kst-eS0Jryiyx71nCbQJAYHZYhtMQ&oe=675E1767                                                                                                                                                                                                                                                                                                                                       "
+                src="/pastorPicture.jpg"
                 alt="Evangelism"
                 className="w-full h-full object-cover p-2 rounded-lg shadow-lg border"
               />
