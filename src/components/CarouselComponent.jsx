@@ -4,7 +4,7 @@ import { Carousel } from "flowbite-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function CarouselComponent() {
-  const carouselContent = [
+  const content = [
     {
       title: "Welcome to Our Church.",
       description:
@@ -36,7 +36,7 @@ export function CarouselComponent() {
         leftControl=""
         rightControl=""
       >
-        {carouselContent.map((item, index) => (
+        {content.map((item, index) => (
           <div key={index} className="h-full flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
