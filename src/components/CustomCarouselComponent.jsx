@@ -3,11 +3,13 @@ import { Carousel } from "flowbite-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const CustomCarouselComponent = (...props) => {
-  const content = props;
+  const content = props[0].content;
+
+  console.log(content);
   return (
-    <div className=" border border-red-700">
+    <div className=" h-[30rem]">
       <Carousel
-        slideInterval={5000}
+        slideInterval={2000}
         indicators={true}
         leftControl=""
         rightControl=""
@@ -23,8 +25,8 @@ const CustomCarouselComponent = (...props) => {
                 transition={{ duration: 2 }}
                 className="flex flex-col items-center"
               >
-                <img src={item.cover} alt={item.description} />
-                <p className="text-white text-lg sm:text-xl mb-8 max-w-2xl font-heading_secondary text-center mx-auto border-l-8 border-green-700 pl-2 pt-4">
+                <img src={item.cover} alt={item.description} className="object-cover" />
+                <p className="text-white text-lg sm:text-xl mb-8 max-w-2xl font-heading_secondary text-center mx-auto border-l-8  pl-2 pt-4">
                   {item.description}
                 </p>
               </motion.div>

@@ -25,13 +25,13 @@ const SermonArchive = () => {
               Church. Our services are filled with inspiring messages, uplifting
               music, and a welcoming community. Join us as we gather to praise,
               learn, and grow together in faith.
-            </p>{" "}
+            </p>
             <Button className="mt-4 p-2 bg-brand_color">Learn More</Button>
           </div>
         </div>
       </div>
-      <motion.div className="container mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
+      <motion.div className="container mx-auto p-6 md:p-10  justify-center mt-[3rem]">
+        <div className="w-full mb-6 md:mb-0">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center md:text-left">
             Empowering Our Community Through
             <span className="relative  inline-block ml-1 text-white px-4 py-2">
@@ -47,7 +47,7 @@ const SermonArchive = () => {
             </span>
           </h1>
         </div>
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full">
           <p className="font-heading_secondary text-base sm:text-lg lg:text-xl text-center md:text-left">
             Zomba Baptist Church is committed to making a positive impact
             through our outreach initiatives. We engage in various community
@@ -58,7 +58,7 @@ const SermonArchive = () => {
         </div>
       </motion.div>
       <motion.div>
-        <div className="container mx-auto p-6 md:p-10">
+        <div className="container mx-auto p-6 md:p-10 mt-[10rem]">
           <ServiceComponent />
         </div>
       </motion.div>

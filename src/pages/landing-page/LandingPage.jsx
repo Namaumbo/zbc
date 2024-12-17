@@ -40,7 +40,7 @@ const LandingPage = () => {
     };
   }, []);
   const headingStyle =
-    " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold ";
+    " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold mb-2";
   return (
     <>
       <div

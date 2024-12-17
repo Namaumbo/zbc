@@ -1,14 +1,14 @@
 import React from "react";
 
 const TeamComponent = ({ ...props }) => {
-  const { fullName, position } = props;
+  const { fullName, position, image } = props;
   return (
     <div className="team-container">
       <div className="text-center">
         <img
-          src={`${process.env.PUBLIC_URL}/team-member-3.jpg`}
+          src={image}
           alt="Team Member 3"
-          className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
+          className="w-[15rem] h-[15rem] rounded-lg mx-auto mb-4 object-cover"
         />
         <h3 className="text-xl font-semibold mb-2 text-white font-heading_secondary">
           {fullName}

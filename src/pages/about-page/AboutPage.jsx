@@ -87,7 +87,7 @@ const AboutPage = () => {
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
             Our Vision
           </h2>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-heading">
+          <h1 className="text-semi_heading_color text-4xl md:text-5xl font-bold mb-4 font-heading">
             we desire to be a Jesus church.
           </h1>
           <p className="mb-6 font-heading_secondary">
@@ -107,7 +107,7 @@ const AboutPage = () => {
           </video>
         </div>
       </div>
-      <div className="bg-black">
+      <div className="bg-black ">
         <div className="container mx-auto py-8">
           <h2 className="text-3xl md:text-4xl font-bold  text-white font-heading text-center">
             Our Team
@@ -116,27 +116,30 @@ const AboutPage = () => {
             <TeamComponent
               fullName="Pastor Richard Makhenjera"
               position="Resident Pastor"
+              image= "/pastor.jpg"
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1  mb-6 mt-16">
             {second_rank.map((person) => {
               return (
                 <div>
                   <TeamComponent
                     fullName={person.fullName}
                     position={person.position}
+                    image="/pastor.jpg"
                   />
                 </div>
               );
             })}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-1 mb-6 mt-16">
             {third_rank.map((person, index) => {
               return (
                 <div key={index}>
                   <TeamComponent
                     fullName={person.fullName}
                     position={person.position}
+                    image="/pastor.jpg"
                   />
                 </div>
               );
