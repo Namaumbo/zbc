@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NavBarComponent from "../../components/NavBarComponent";
-import { CardComponent } from "../../components/CardComponent";
+// import { CardComponent } from "../../components/CardComponent";
 import { Button } from "flowbite-react";
 import ServiceComponent from "../../components/services/ServiceComponent";
 
@@ -47,6 +47,7 @@ const SermonArchive = () => {
             </span>
           </h1>
         </div>
+
         <div className="w-full">
           <p className="font-heading_secondary text-base sm:text-lg lg:text-xl text-center md:text-left">
             Zomba Baptist Church is committed to making a positive impact
