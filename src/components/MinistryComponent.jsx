@@ -1,44 +1,45 @@
 "use client";
-import { motion} from "framer-motion";
-import { Button } from "flowbite-react";
-import MinistriesExplaination from "../core/MinistryExplainations";
-export default function MinistryComponent() {
-  console.log(MinistriesExplaination);
-  return (
-    <div>
-      {MinistriesExplaination.map((ministry, index) => (
-        <div className="flex flex-row justify-center mt-8" key={index}>
-          <motion.div
-            className="bg-[#008cd0] rounded-sm p-6 shadow-2xl w-[40%] ml-28"
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-          >
-            <h3 className="font-bold text-5xl font-coiny w-96 text-white">
-              {ministry.ministry}
-            </h3>
-            <p className="mt-4 font-paragraph w-[80%]  text-white">
-              {ministry.explaination}
-            </p>
-            <Button className="mt-4  p-2" color="light">
-              Like and Share
-            </Button>
-          </motion.div>
 
-          <motion.div
-            className=" rounded-sm mb-5 shadow-2xl w-[40%] ml-29 mt-10"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: -150 }}
-            transition={{ duration: 2 }}
-          >
-            <img
-              src={ministry.coverPage}
-              alt="Children's Ministry"
-              className="w-full h-full shadow-sm rounded-sm"
-            />
-          </motion.div>
+import MinistriesExplaination from "../core/MinistryExplainations";
+
+export default function MinistryComponent() {
+  return (
+    <>
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {MinistriesExplaination.map((ministry, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-4"
+            >
+              <div className="relative mx-4 -mt-6 h-[14rem] overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                <img
+                  src={ministry.coverPage}
+                  alt={ministry.ministry}
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 cursor-pointer hover:scale-110 transition-all duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h5 className="block font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 antialiased">
+                  {ministry.ministry}
+                </h5>
+                <p className="block text-base font-light leading-relaxed font-heading_secondary antialiased">
+                  {ministry.description}
+                </p>
+              </div>
+              <div className="p-4 pt-0">
+                <button
+                  data-ripple-light="true"
+                  type="button"
+                  className="select-none rounded-lg bg-second_brand_color py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 }

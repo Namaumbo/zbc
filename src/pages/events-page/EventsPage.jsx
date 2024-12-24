@@ -121,15 +121,16 @@ const EventsPage = () => {
       >
         <div className="absolute inset-0 bg-white/30 ">
           <div className="flex flex-col items-center justify-center h-full text-center px-4">
-            <h2 className="text-5xl md:text-5xl sm:text-3xl xs:text-2xl font-bold mb-4 w-full md:w-[34rem] text-white px-4">
-              Join Our Community Church Ministries
+            <h2 className="font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
+              Upcoming Events & Church Activities
             </h2>
-            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white px-4">
-              At Zomba Baptist, we are dedicated to nurturing a supportive
-              environment where everyone feels welcomed and valued. Join us in
-              our mission to spread love and hope.
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
+              Join us for our vibrant church events and activities that bring
+              our community together. From worship services to fellowship
+              gatherings, youth programs to special celebrations, there's
+              something for everyone at Zomba Baptist Church.
             </p>
-            <Button className="mt-4 p-3 bg-[#008cd0] text-base sm:text-lg">Learn More</Button>
+            <Button className="mt-4 p-2 bg-brand_color">Learn More</Button>
           </div>
         </div>
       </div>
@@ -151,7 +152,8 @@ const EventsPage = () => {
             );
           })}
         </div>
-      </div>    </>
+      </div>{" "}
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import { Button } from "flowbite-react";
 import MinistryComponent from "../../components/MinistryComponent";
+// import { motion } from "framer-motion";
 
 const ParallaxScroll = () => {
   return (
@@ -10,10 +11,11 @@ const ParallaxScroll = () => {
       {/* Hero sections */}
 
       <div
-        className="relative h-[40rem] mb-8 bg-cover bg-center"
+        className="relative h-[50rem]  bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://scontent.fblz1-1.fna.fbcdn.net/v/t39.30808-6/324841664_480510607487998_4782025878627412943_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEYqMPLHiwKPINxuWhlOBwN_hKM9qjLGZf-Eoz2qMsZl2ftkK9WxFe3oo2T8uX0bjez9A4Rhv3AyQkObJaslo8S&_nc_ohc=l63UzaY8leYQ7kNvgGVLnkZ&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fblz1-1.fna&_nc_gid=AtIxDlhgkeil_GfdwjoVe8e&oh=00_AYBQAQuTAkqIpEvzXea95oFpputvfbThtLAdvwQ6toLNjQ&oe=675E6E98')",
+          backgroundImage: "url('/ministries.jpg')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/60">
@@ -36,10 +38,27 @@ const ParallaxScroll = () => {
 
       <div
         style={{
-          backgroundColor: "#ffffff",
           backgroundImage: `url("https://www.transparenttextures.com/patterns/asfalt-dark.png")`,
         }}
       >
+        <div className="w-full mb-6 md:mb-0 p-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
+            Our Community In
+            <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
+              Ministries
+              <span
+                className="absolute bg-brand_color inset-0 ml-2 skew-x-[-15deg]"
+                aria-hidden="true"
+                style={{
+                  zIndex: -1,
+                  transformOrigin: "right",
+                }}
+              ></span>
+            </span>
+          </h1>
+        </div>
+     
+      
         <MinistryComponent />
       </div>
     </div>
