@@ -34,6 +34,8 @@ const CoreValuesComponent = () => {
     },
   ];
 
+
+  
   return (
     <div className="container mx-auto px-12 py-16">
       <h2 className="text-3xl md:text-4xl font-boldtext-semi_heading_color font-heading text-center mb-8">
