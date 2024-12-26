@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export function CarouselComponent() {
   const content = [
     {
-      title: "Welcome to Our Church.",
+      title: "Welcome to ZBC.",
       description:
         "Zomba Baptist Church is a welcoming community for spiritual growth through engaging sermons Bible studies and fellowship.",
     },

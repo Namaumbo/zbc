@@ -36,7 +36,7 @@ const CoreValuesComponent = () => {
 
   return (
     <div className="container mx-auto px-12 py-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-black font-heading text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-boldtext-semi_heading_color font-heading text-center mb-8">
         Our Core Beliefs
       </h2>
       <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
@@ -44,7 +44,7 @@ const CoreValuesComponent = () => {
           <div
             key={index}
             className="bg-gray-50 p-6 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 hover:bg-white hover:cursor-pointer"
-          >            <h3 className="text-xl font-semibold mb-4 text-black font-heading">
+          >            <h3 className="text-xl  mb-4 text-semi_heading_color font-heading font-extrabold">
               {belief.title}
             </h3>
             <p className=" font-heading_secondary">{belief.description}</p>

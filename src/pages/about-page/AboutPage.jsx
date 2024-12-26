@@ -91,7 +91,7 @@ const AboutPage = () => {
             we desire to be a Jesus church.
           </h1>
           <p className="mb-6 font-heading_secondary">
-            Zomba bapist stared in 1979 by the Southen Baptist Convention
+            Zomba baptist stared in 1979 by the Southen Baptist Convention
             Missionaries. Late Pastor Kachase Gama, together with the
             Missionaries, planted the church right in the city of zomba. Late
             Pastor Kachasu Gama became the first pastor.In its first days, the
@@ -101,10 +101,21 @@ const AboutPage = () => {
           <Button className="bg-brand_color">Learn More</Button>
         </div>
         <div className="md:w-1/2 ">
-          <video controls className="w-full">
-            <source src="your-video-url.mp4" type="video/mp4" />
+          {/* <video controls className="w-full">
+            <source src="https://youtu.be/QXowrFiSPwo?si=oompmbQ2WbpD2dt3" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/QXowrFiSPwo?si=oVS5122f0SXLVnrI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <div className="bg-black ">
@@ -116,7 +127,7 @@ const AboutPage = () => {
             <TeamComponent
               fullName="Pastor Richard Makhenjera"
               position="Resident Pastor"
-              image= "/pastor.jpg"
+              image="/pastor.jpg"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-1  mb-6 mt-16">

@@ -26,7 +26,7 @@ const EmpoweringComponent = () => {
     <div className="">
       <div className="container m-[auto] w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-8">
         {content.map((item, index) => (
-          <div key={index} className="border border-red-700">
+          <div key={index} className="">
             <div className="flex flex-col items-start p-1 ">
               <motion.img
                 src={item.imageUrl}
