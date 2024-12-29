@@ -22,6 +22,7 @@ module.exports = {
         semi_heading_color: "var(--semi-heading-color)",
         brand_color: "var(--brand-color)",
         second_brand_color: "var(--second-bland-color)",
+        footer_bg_color:"var(--footerbgcolor)"
       },
     },
   },

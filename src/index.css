@@ -24,6 +24,7 @@
   --border-radius: 4px;
   --semi-heading-color:#1a202c;
   --second-bland-color: #085bb4;
+  --footerbgcolor:#19191e;
 }
 
 @tailwind base;
