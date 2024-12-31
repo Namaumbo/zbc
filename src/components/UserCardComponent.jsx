@@ -30,7 +30,7 @@ const UserCardComponent = () => {
     },
   ];
   return (
-    <div className="h-[40vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
+    <div className="h-[30vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
       <Carousel
         slideInterval={5000}
         indicators={true}

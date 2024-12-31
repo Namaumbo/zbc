@@ -11,7 +11,7 @@ import CountUp from "react-countup";
 import { DatePickerComponent } from "../../components/DatePickerComponent";
 import { FiMapPin } from "react-icons/fi";
 import EmpoweringComponent from "../../components/landing/EmpoweringComponent";
-import ChurchActivityComponent from "../../components/landing/ChurchActivityComponent";
+// import ChurchActivityComponent from "../../components/landing/ChurchActivityComponent";
 
 const LandingPage = () => {
   const { scrollY } = useScroll();
@@ -19,6 +19,7 @@ const LandingPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const [scrollPosition, setScrollPosition] = React.useState(0);
+
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +40,7 @@ const LandingPage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const headingStyle =
     " text-semi_heading_color font-heading text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold mb-2";
   return (
@@ -48,7 +50,15 @@ const LandingPage = () => {
         style={{
           backgroundImage: `url(${background})`,
           backgroundAttachment: "fixed",
-          backgroundPosition: `center ${scrollPosition * -0.5}px`,
+          backgroundPosition: `center ${scrollPosition * -0.7}px`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          height: "100vh",
+          width: "100%",
+          "@media (max-width: 768px)": {
+            backgroundAttachment: "scroll",
+            backgroundPosition: "center",
+          }
         }}
       >
         <NavBarComponent />
@@ -106,24 +116,47 @@ const LandingPage = () => {
           </motion.div>
         </div>
         <div className="w-full md:w-1/2  mt-[-10%]">
-          <section className="p-4 text-center">
-            <h1 className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5">
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            className="p-4 text-center"
+          >
+            <motion.h1
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5"
+            >
               Our Mission & Values
-            </h1>
-            <p className="font-heading_secondary">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.5 }}
+              className="font-heading_secondary"
+            >
               Zomba Baptist Church is dedicated to spreading love, hope, and the
               teachings of Christ. Our mission is to foster a strong community
               of faith, providing support and guidance while encouraging
               spiritual growth among our members.
-            </p>
-          </section>
-          <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="p-4 w-full md:w-1/2 text-center">
+            </motion.p>
+          </motion.section>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1.5 }}
+            className="flex flex-col md:flex-row items-center justify-center"
+          >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="p-4 w-full md:w-1/2 text-center"
+            >
               <motion.h5
                 ref={ref}
                 className={headingStyle}
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
               >
                 <CountUp end={500} duration={2.5} start={isInView ? null : 0} />{" "}
                 members
@@ -132,51 +165,187 @@ const LandingPage = () => {
                 With over 500 members, we are a thriving community committed to
                 living out our faith and supporting one another.
               </p>
-            </div>
-            <div className="p-4 w-full md:w-1/2 text-center">
-              <h5 className={headingStyle}>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="p-4 w-full md:w-1/2 text-center"
+            >
+              <motion.h5
+                ref={ref}
+                className={headingStyle}
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+              >
                 <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
                 outreach programs
-              </h5>
+              </motion.h5>
               <p className="font-heading_secondary">
                 We engage in numerous outreach programs, impacting the lives of
                 100 individuals and families in our community each year.
               </p>
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-center">
-            <div className="p-4 w-full md:w-1/2 text-center">
-              <h5 className={headingStyle}>
+            </motion.div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.7 }}
+            className="flex flex-col md:flex-row items-center justify-center"
+          >
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="p-4 w-full md:w-1/2 text-center"
+            >
+              <motion.h5
+                ref={ref}
+                className={headingStyle}
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+              >
                 <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
                 years
-              </h5>
+              </motion.h5>
               <p className="font-heading_secondary">
                 For over 20 years, Zomba Baptist Church has been a beacon of
                 hope and faith in our community, guiding individuals on their
                 spiritual journeys.
               </p>
-            </div>
-            <div className="p-4 w-full md:w-1/2 text-center">
-              <h5 className={headingStyle}>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="p-4 w-full md:w-1/2 text-center"
+            >
+              <motion.h5
+                ref={ref}
+                className={headingStyle}
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : {}}
+              >
                 <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
                 ministries
-              </h5>
+              </motion.h5>
               <p className="font-heading_secondary">
                 We offer 10 active ministries that cater to various needs,
                 ensuring everyone finds a place to grow and serve.
               </p>
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+        </div>{" "}
       </div>
 
       <div className="container mx-auto mt-[5rem]  flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Church Activities Overview</h1>
 
-        <ChurchActivityComponent />
-      </div>
+        <ul className="flex flex-row flex-wrap gap-4 justify-center mt-12 mb-12 px-4 md:px-6">
+          <li className="w-full sm:w-[calc(25%-1rem)]">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 1 * 0.2 }}
+              className="hover:bg-gray-100 hover:cursor-pointer flex flex-col items-center p-6 shadow-lg rounded-lg h-full"
+            >
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src="/church_2.png"
+                alt="meetinn & praying"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-4"
+              />
+              <h3 className="font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 text-center">
+                Weekly Service
+              </h3>
+              <p className="font-heading_secondary text-center">
+                Join us every Sunday for an uplifting worship service where we
+                come together as a community to praise God, hear His word, and
+                grow in our faith and love. "Let us not give up meeting
+                together, as some are in the habit of doing, but let us
+                encourage one another." - <strong>Hebrews 10:25</strong>
+              </p>
+            </motion.div>
+          </li>
+          <li className="w-full sm:w-[calc(25%-1rem)]">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 2 * 0.2 }}
+              className="hover:bg-gray-100 hover:cursor-pointer flex flex-col items-center p-6 shadow-lg rounded-lg h-full"
+            >
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src="/community.png"
+                alt="/foldedHands.png"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-4"
+              />
+              <h3 className="font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 text-center">
+                Community Outreach
+              </h3>
+              <p className="font-heading_secondary text-center">
+                Serve and connect with our local community through various
+                outreach programs, showing God's love in practical ways and
+                making a positive impact in people's lives. "For even the Son of
+                Man did not come to be served, but to serve, and to give his
+                life as a ransom for many." - <strong>Mark 10:45</strong>
+              </p>
+            </motion.div>
+          </li>
 
-      <div className="container mx-auto mt-5 flex flex-col justify-center items-center">
+          <li className="w-full sm:w-[calc(25%-1rem)]">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 3 * 0.2 }}
+              className="hover:bg-gray-100 hover:cursor-pointer flex flex-col items-center p-6 shadow-lg rounded-lg h-full"
+            >
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src="/foldedHands.png"
+                alt="/foldedHands.png"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-4"
+              />
+              <h3 className="font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 text-center">
+                Prayer Meeting
+              </h3>
+              <p className="font-heading_secondary text-center">
+                Gather with fellow believers for powerful prayer sessions where
+                we lift up our needs, intercede for others, and experience the
+                transformative power of corporate prayer. "Again, truly I tell
+                you that if two of you on earth agree about anything they ask
+                for, it will be done for them by my Father in heaven." -
+                <strong>Matthew 18:19</strong>
+              </p>
+            </motion.div>
+          </li>
+          <li className="w-full sm:w-[calc(25%-1rem)]">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 4 * 0.2 }}
+              className="hover:bg-gray-100 hover:cursor-pointer flex flex-col items-center p-6 shadow-lg rounded-lg h-full"
+            >
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                src="/bible_icon.png"
+                alt="holy-bible"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-4"
+              />
+              <h3 className="font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 text-center">
+                Bible Study
+              </h3>
+              <p className="font-heading_secondary text-center">
+                Deepen your understanding of Scripture through our engaging
+                Bible study sessions where we explore God's word, share
+                insights, and apply biblical teachings to daily life. "All
+                Scripture is God-breathed and is useful for teaching, rebuking,
+                correcting and training in righteousness." -{" "}
+                <strong>2 Timothy 3:16</strong>
+              </p>
+            </motion.div>
+          </li>
+        </ul>
+      </div>
+      <div className="container mx-auto  flex flex-col justify-center items-center ">
         <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
 
         <div className="w-full">
