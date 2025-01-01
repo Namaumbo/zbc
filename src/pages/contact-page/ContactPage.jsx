@@ -19,9 +19,9 @@ const ContactPage = () => {
         <div className="absolute inset-0 bg-blue-900/60">
           <div className="flex flex-col items-center justify-center h-full text-center px-4">
             <h2 className="font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
-              Get in Touch with Zomba Baptist Church
+              Lets Get in Touch
             </h2>
-            <p className="text-xl md:text-lg sm:text-base xs:text-sm container text-white font-heading_secondary">
+            <p className="text-xl md:text-lg sm:text-base xs:text-sm container text-white font-heading_secondary w-[70%]">
               We'd love to hear from you! Whether you have questions about our
               services, want to join our community, or need spiritual guidance,
               our team is here to help. Reach out to us through the contact
@@ -30,9 +30,8 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-
-      <div className="w-full mb-6 md:mb-0 p-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
+      <div className="w-full mb-6 md:mb-0 p-4 md:p-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
           Contact &
           <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
             Support
@@ -46,18 +45,17 @@ const ContactPage = () => {
             ></span>
           </span>
         </h1>
-        <p className="text-gray-600 text-center mt-4 mb-8 container  w-[70%] mx-auto font-heading_secondary">
+        <p className="text-gray-600 text-center mt-4 mb-8 container w-[90%] md:w-[70%] mx-auto font-heading_secondary">
           Connect with us through our contact form, phone, or email. We're here
           to answer your questions, provide support, and welcome you into our
           church community. Your message is important to us.
         </p>
       </div>
 
-      <div className="container p-4 flex flex-row gap-4 m-[auto] w-1/2">
-        <div className="bg-gray-200  rounded-md p-4 w-1/2">
-          <div className="flex flex-row gap-3">
+      <div className="container p-4 flex flex-col md:flex-row gap-4 m-[auto] w-full md:w-[90%] lg:w-[80%] xl:w-[70%]">
+        <div className="bg-gray-200 rounded-md p-4 w-full md:w-1/2">
+          <div className="flex flex-col sm:flex-row gap-3">
             <InputComponent label="First name *" />
-
             <InputComponent label="Last name *" />
           </div>
           <div className="mt-4">
@@ -66,34 +64,35 @@ const ContactPage = () => {
           <div className="mt-4">
             <TextAreaComponent />
           </div>
-          <Button className="bg-brand_color mt-4">Submit</Button>
+          <Button className="bg-brand_color mt-4 w-full sm:w-auto">
+            Submit
+          </Button>
         </div>
-        <div className="p-8">
+        <div className="p-4 md:p-8 w-full md:w-1/2">
           <div>
-            <h3 className="font-heading text-semi_heading_color font-bold">
+            <h3 className="font-heading text-semi_heading_color font-bold text-xl md:text-2xl">
               Church HotLine
             </h3>
             <p className="text-gray-500 font-semibold">
               Interested to speak with us? Call us at:
             </p>
             <p className="font-heading">0999999999</p>
-            <hr />
+            <hr className="my-4" />
           </div>
-          <div className="mt-8">
-            <h3 className="font-heading text-semi_heading_color font-bold">
+          <div className="mt-6 md:mt-8">
+            <h3 className="font-heading text-semi_heading_color font-bold text-xl md:text-2xl">
               Church Email
             </h3>
             <p className="text-gray-500 font-semibold">
               Interested to speak Email Us?:
             </p>
             <p className="font-heading">admin@zbc.com</p>
-            <hr />
+            <hr className="my-4" />
           </div>
-          <div className="mt-8">
-            <h3 className="font-heading text-semi_heading_color font-bold">
+          <div className="mt-6 md:mt-8">
+            <h3 className="font-heading text-semi_heading_color font-bold text-xl md:text-2xl">
               Donate
             </h3>
-
             <p className="text-gray-500 font-semibold">
               Support our ministry and make a lasting impact through your
               generous donation:
@@ -101,8 +100,7 @@ const ContactPage = () => {
             <p className="font-semi_heading">National Bank: 20201010101</p>
             <p className="font-semi_heading">TNM Mpamba: 20201010101</p>
             <p className="font-semi_heading">AirTel Money: 20201010101</p>
-
-            <hr />
+            <hr className="my-4" />
           </div>
         </div>
       </div>
