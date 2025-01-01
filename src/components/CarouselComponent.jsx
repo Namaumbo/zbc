@@ -6,22 +6,22 @@ import { motion, AnimatePresence } from "framer-motion";
 export function CarouselComponent() {
   const content = [
     {
-      title: "Welcome to ZBC.",
+      title: "Welcome to ZBC",
       description:
         "Zomba Baptist Church is a welcoming community for spiritual growth through engaging sermons Bible studies and fellowship.",
     },
     {
-      title: "Grow in Faith Together.",
+      title: "Grow in Faith Together",
       description:
         "Join us in our journey of faith as we learn, worship, and support each other through Bible studies, prayer groups, and community activities.",
     },
     {
-      title: "Join Our Community.",
+      title: "Join Our Community",
       description:
         "Become part of our diverse and loving church family where everyone is welcome to participate, serve, and build meaningful relationships.",
     },
     {
-      title: "Experience God's Love.",
+      title: "Experience God's Love",
       description:
         "Discover the transformative power of God's love through worship, ministry, and outreach programs that touch lives and hearts.",
     },
@@ -31,7 +31,7 @@ export function CarouselComponent() {
   return (
     <div className="h-[50vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
       <Carousel
-        slideInterval={5000}
+        slideInterval={10000}
         indicators={true}
         leftControl=" "
         rightControl=" "

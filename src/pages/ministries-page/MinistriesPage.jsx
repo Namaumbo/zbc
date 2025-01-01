@@ -43,7 +43,7 @@ const ParallaxScroll = () => {
       >
         <div className="w-full mb-6 md:mb-0 p-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
-            Our Community In
+            Our 
             <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
               Ministries
               <span

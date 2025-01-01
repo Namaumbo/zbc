@@ -17,7 +17,7 @@ const SermonArchive = () => {
         <div className="absolute inset-0 bg-blue-900/60">
           <div className="flex flex-col items-center justify-center h-full text-center px-4">
             <h2 className="font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
-              Join Us For Our Weekly Services
+              Join Us For Our Weekly Activities
             </h2>
             <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
               Experience the power of worship and fellowship at Zomba Baptist

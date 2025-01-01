@@ -1,27 +1,19 @@
 const MinistriesExplaination = [
   {
+    ministry: "Women's Ministry",
+    explaination:
+      "This is the ministry for women. The aim is to disciple one another to grow in faith in Christ. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Corinthians 3:9",
+    coverPage: "/womenMinistry.jpg",
+    description:
+      "Supporting women's spiritual growth through fellowship, Bible study, and mutual encouragement.",
+  },
+  {
     ministry: "Children's Ministry",
     explaination:
       "This is the ministry which reaches out to children. The aim of the ministry is to provide sound understanding of the word of God to children so that they are well prepared and equipped for good work. 2 Timothy 3: 16-17.",
     coverPage: "/chidrenMinistry.jpg",
     description:
       "Nurturing children's spiritual growth through Bible lessons, activities, and worship in a fun, engaging environment.",
-  },
-  {
-    ministry: "Education Ministry",
-    explaination:
-      "The aim of this ministry is to provide a Christian learning and instruction environment, facilities through which God teaches, prepares and develops learners in the city of Zomba. Psalms 32:8",
-    coverPage:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop",
-    description:
-      "Providing Christ-centered education and resources to develop spiritual and academic growth in our community.",
-  },
-  {
-    ministry: "Kingdom Ambassadors",
-    explaination: "Contents to come",
-    coverPage: "/kingdomAmbassador.jpg",
-    description:
-      "Training believers to represent Christ effectively in their daily lives and communities.",
   },
   {
     ministry: "Girls Auxiliary Ministry",
@@ -39,13 +31,22 @@ const MinistriesExplaination = [
       "Empowering youth through faith-based activities, worship, and leadership development.",
   },
   {
-    ministry: "Women's Ministry",
+    ministry: "Education Ministry",
     explaination:
-      "This is the ministry for women. The aim is to disciple one another to grow in faith in Christ. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Corinthians 3:9",
-    coverPage: "/womenMinistry.jpg",
+      "The aim of this ministry is to provide a Christian learning and instruction environment, facilities through which God teaches, prepares and develops learners in the city of Zomba. Psalms 32:8",
+    coverPage:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop",
     description:
-      "Supporting women's spiritual growth through fellowship, Bible study, and mutual encouragement.",
+      "Providing Christ-centered education and resources to develop spiritual and academic growth in our community.",
   },
+  {
+    ministry: "Kingdom Ambassadors",
+    explaination: "Contents to come",
+    coverPage: "/kingdomAmbassador.jpg",
+    description:
+      "Training believers to represent Christ effectively in their daily lives and communities.",
+  },
+
   {
     ministry: "Men's Ministry",
     explaination:
@@ -54,15 +55,6 @@ const MinistriesExplaination = [
     description:
       "Building strong, godly men through fellowship, accountability, and spiritual development.",
   },
-  {
-    ministry: "Young Couples",
-    explaination: "Contents to come",
-    coverPage:
-      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop",
-    description:
-      "Supporting newly married couples in building Christ-centered marriages through fellowship and guidance.",
-  },
-
   {
     ministry: "Evangelism, Discipleship and Outreach Ministry",
     explaination:
@@ -88,6 +80,15 @@ const MinistriesExplaination = [
     description:
       "Supporting the church through focused prayer meetings and continuous intercession.",
   },
+  {
+    ministry: "Young Couples",
+    explaination: "Contents to come",
+    coverPage:
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop",
+    description:
+      "Supporting newly married couples in building Christ-centered marriages through fellowship and guidance.",
+  },
+
   {
     ministry: "Prison Ministry",
     explaination:
