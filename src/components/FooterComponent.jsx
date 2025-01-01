@@ -11,6 +11,7 @@ const FooterComponent = () => {
             className="h-24  "
           />
         </div>
+        
 
         <div className="  p-5 flex-1">
           <h4 className="text-white text-semi_heading_color  mb-5 font-semibold">
