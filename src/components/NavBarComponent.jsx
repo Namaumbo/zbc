@@ -7,6 +7,8 @@ import React from "react";
  * The navigation bar is sticky and positioned at the top of the page with a z-index of 50.
  * The component uses the `flowbite-react` library for the button component.
  */
+
+
 const NavBarComponent = () => {
   const linkStyle =
     "text-white    hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-heading transition duration-300";
