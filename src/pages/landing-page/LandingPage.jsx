@@ -63,11 +63,11 @@ const LandingPage = () => {
       >
         <NavBarComponent />
         <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0))",
-          }}
+          className="absolute inset-0  bg-blue-900/60"
+          // style={{
+          //   background:
+          //    "absolute inset-0 bg-blue-900/60",
+          // }}
         ></div>
 
         <div className="w-full pt-8">

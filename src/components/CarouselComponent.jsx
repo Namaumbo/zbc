@@ -8,7 +8,7 @@ export function CarouselComponent() {
     {
       title: "Welcome to ZBC",
       description:
-        "Zomba Baptist Church is a welcoming community for spiritual growth through engaging sermons Bible studies and fellowship.",
+        "To Serve and Grow ",
     },
     {
       title: "Grow in Faith Together",
