@@ -81,14 +81,16 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
+      <div>
+        <CoreValuesComponent />
+      </div>
       <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
             Our Vision
           </h2>
           <h1 className="text-semi_heading_color text-4xl md:text-5xl font-bold mb-4 font-heading">
-            we desire to be a Jesus church.
+            we are a <span className="text-brand_color">Baptist</span> church.
           </h1>
           <p className="mb-6 font-heading_secondary">
             Zomba baptist stared in 1979 by the Southen Baptist Convention
@@ -120,7 +122,7 @@ const AboutPage = () => {
       </div>
       <div className="bg-black ">
         <div className="container mx-auto py-8">
-          <h2 className="text-3xl md:text-4xl font-bold  text-white font-heading text-center">
+          <h2 className="text-3xl md:text-4xl font-bold  text-white font-heading text-center pb-4">
             Our Team
           </h2>
           <div>
@@ -157,9 +159,6 @@ const AboutPage = () => {
             })}
           </div>
         </div>
-      </div>
-      <div>
-        <CoreValuesComponent />
       </div>
     </>
   );

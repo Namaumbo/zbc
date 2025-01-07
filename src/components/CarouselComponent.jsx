@@ -8,7 +8,7 @@ export function CarouselComponent() {
     {
       title: "Welcome to ZBC",
       description:
-        "To Serve and Grow ",
+        "To Serve and Give ",
     },
     {
       title: "Grow in Faith Together",

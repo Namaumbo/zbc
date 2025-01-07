@@ -3,9 +3,9 @@ import React from "react";
 const FooterComponent = () => {
   return (
     <footer className="bg-footer_bg_color ">
-      <div className="flex flex-col md:flex-row p-6 container m-[auto] w-[60%]">
+      <div className="flex flex-col md:flex-row p-6 container m-[auto] w-[70%]">
         <div className="flex-1 flex justify-center items-center">
-          <img src="/image.png" alt="ZBC Logo" className="h-24  " />
+          <img src="/image.png" alt="ZBC Logo" className="h-[7rem] w-[7rem]" />
         </div>
         <div className="  p-5 flex-1">
           <h4 className="text-white text-semi_heading_color  mb-5 font-semibold">
@@ -95,7 +95,7 @@ const FooterComponent = () => {
               Zomba Baptist Church
             </p>
             <p className="text-white font-heading_secondary">
-              Post Office Box 000
+              Post Office Box 580 
             </p>
             <p className="text-white font-heading_secondary">Zomba, Malawi</p>
           </div>
@@ -141,8 +141,7 @@ const FooterComponent = () => {
       </div>
       <hr className="w-[80%] md:w-[40%] mx-auto border-black mt-1 mb-5" />
       <p className="w-full text-white text-center px-4 pb-4 font-bold text-sm md:text-base font-heading_secondary">
-        © 2024 Zomba Baptist Church. All rights reserved. Join us in spreading
-        love and hope through our faith and community initiatives.
+        © 2024 Zomba Baptist Church. All rights reserved. 
       </p>
     </footer>
   );

@@ -20,7 +20,6 @@ const LandingPage = () => {
   const isInView = useInView(ref, { once: true });
   const [scrollPosition, setScrollPosition] = React.useState(0);
 
-
   React.useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
@@ -58,16 +57,12 @@ const LandingPage = () => {
           "@media (max-width: 768px)": {
             backgroundAttachment: "scroll",
             backgroundPosition: "center",
-          }
+          },
         }}
       >
         <NavBarComponent />
         <div
-          className="absolute inset-0  bg-blue-900/60"
-          // style={{
-          //   background:
-          //    "absolute inset-0 bg-blue-900/60",
-          // }}
+          className="absolute inset-0  bg-purple-900/60"
         ></div>
 
         <div className="w-full pt-8">
@@ -128,18 +123,20 @@ const LandingPage = () => {
               transition={{ duration: 0.5 }}
               className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5"
             >
-              Our Mission & Values
+              Our Mission
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5 }}
-              className="font-heading_secondary"
+              className="font-heading_secondary text-base"
             >
-              Zomba Baptist Church is dedicated to spreading love, hope, and the
-              teachings of Christ. Our mission is to foster a strong community
-              of faith, providing support and guidance while encouraging
-              spiritual growth among our members.
+              Zomba Baptist Church is dedicated to give and serve God and other
+              people in the City of Zomba, Zomba District, Malawi, and other
+              parts of the world,with the the help of the Holy Spirit. <br />
+              <strong>
+                Mathew 20 vs 28 , Mathew 28 vs 18-20 and Acts 1 vs 8
+              </strong>
             </motion.p>
           </motion.section>
           <motion.div
@@ -209,6 +206,7 @@ const LandingPage = () => {
                 hope and faith in our community, guiding individuals on their
                 spiritual journeys.
               </p>
+              
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -251,14 +249,15 @@ const LandingPage = () => {
                 className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg mb-4"
               />
               <h3 className="font-heading font-extrabold text-2xl text-semi_heading_color mt-4 mb-3 text-center">
-                Weekly Service
+                Weekly Activities
               </h3>
               <p className="font-heading_secondary text-center">
-                Join us every Sunday for an uplifting worship service where we
-                come together as a community to praise God, hear His word, and
-                grow in our faith and love. "Let us not give up meeting
-                together, as some are in the habit of doing, but let us
-                encourage one another." - <strong>Hebrews 10:25</strong>
+                Join us every Sunday at <strong>8:30 AM</strong> for
+                International Service and <strong>10:30 AM</strong> for chichewa
+                Service, where we come together as a community to praise God,
+                hear His word, and grow in our faith and love. "Let us not give
+                up meeting together, as some are in the habit of doing, but let
+                us encourage one another." - <strong>Hebrews 10:25</strong>
               </p>
             </motion.div>
           </li>
