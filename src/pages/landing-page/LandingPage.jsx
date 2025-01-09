@@ -61,9 +61,7 @@ const LandingPage = () => {
         }}
       >
         <NavBarComponent />
-        <div
-          className="absolute inset-0  bg-purple-900/60"
-        ></div>
+        <div className="absolute inset-0  bg-purple-900/60"></div>
 
         <div className="w-full pt-8">
           <CarouselComponent />
@@ -79,9 +77,9 @@ const LandingPage = () => {
         </motion.div>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-14 container mx-auto flex flex-row justify-center items-center ">
+      <div className="px-4 sm:px-6 lg:px-14 container mx-auto flex flex-row justify-center items-center mt-3 ">
         <div className="hidden md:block w-1/2">
-          <motion.div className="relative h-[60%] overflow-hidden mt-4">
+          <motion.div className="relative h-[60%] overflow-hidden mt-4 ">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
@@ -101,135 +99,165 @@ const LandingPage = () => {
             >
               <img
                 src="/pastorPicture.jpg"
-                alt="Evangelism"
-                className="w-full h-full object-cover p-2 rounded-lg shadow-lg border"
+                alt="pastor&wife"
+                className="w-full h-[35rem] object-cover object-top rounded-lg "
               />
             </motion.div>
-            <p className=" font-heading font-semibold text-center mt-4">
-              Pastor R Makhenjera and Wife
+            <p className="block text-right italic font-semibold text-brand_color mt-2">
+              - Pastor R Makhenjera and Wife
             </p>
           </motion.div>
         </div>
-        <div className="w-full md:w-1/2  mt-[-10%]">
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
-            className="p-4 text-center"
-          >
-            <motion.h1
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5"
-            >
-              Our Mission
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.5 }}
-              className="font-heading_secondary text-base"
-            >
-              Zomba Baptist Church is dedicated to give and serve God and other
-              people in the City of Zomba, Zomba District, Malawi, and other
-              parts of the world,with the the help of the Holy Spirit. <br />
-              <strong>
-                Mathew 20 vs 28 , Mathew 28 vs 18-20 and Acts 1 vs 8
-              </strong>
-            </motion.p>
-          </motion.section>
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.5 }}
-            className="flex flex-col md:flex-row items-center justify-center"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-4 w-full md:w-1/2 text-center"
-            >
-              <motion.h5
-                ref={ref}
-                className={headingStyle}
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : {}}
-              >
-                <CountUp end={500} duration={2.5} start={isInView ? null : 0} />{" "}
-                members
-              </motion.h5>
-              <p className="font-heading_secondary">
-                With over 500 members, we are a thriving community committed to
-                living out our faith and supporting one another.
-              </p>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-4 w-full md:w-1/2 text-center"
-            >
-              <motion.h5
-                ref={ref}
-                className={headingStyle}
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : {}}
-              >
-                <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
-                outreach programs
-              </motion.h5>
-              <p className="font-heading_secondary">
-                We engage in numerous outreach programs, impacting the lives of
-                100 individuals and families in our community each year.
-              </p>
-            </motion.div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.7 }}
-            className="flex flex-col md:flex-row items-center justify-center"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-4 w-full md:w-1/2 text-center"
-            >
-              <motion.h5
-                ref={ref}
-                className={headingStyle}
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : {}}
-              >
-                <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
-                years
-              </motion.h5>
-              <p className="font-heading_secondary">
-                For over 20 years, Zomba Baptist Church has been a beacon of
-                hope and faith in our community, guiding individuals on their
-                spiritual journeys.
-              </p>
-              
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-4 w-full md:w-1/2 text-center"
-            >
-              <motion.h5
-                ref={ref}
-                className={headingStyle}
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : {}}
-              >
-                <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
-                ministries
-              </motion.h5>
-              <p className="font-heading_secondary">
-                We offer 10 active ministries that cater to various needs,
-                ensuring everyone finds a place to grow and serve.
-              </p>
-            </motion.div>
-          </motion.div>
+        <div className="w-full md:w-1/2 md:ml-[-4rem] z-10">
+          <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md mx-4 sm:mx-0">
+            <h3 className="text-xl sm:text-2xl font-heading text-semi_heading_color font-bold mb-3">
+              Hello in Jesus Name!
+            </h3>
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 font-heading_secondary p-2 sm:p-4">
+              I am so excited to welcome you to our ZBC website. We are looking
+              forward to keep interacting with you. Our goal is to keep you
+              informed of what the Lord is doing through His Church. Keep
+              following us for what the Lord Almighty wants to share with you
+              through this website.
+            </p>
+            <span className="block text-right italic font-semibold text-brand_color text-sm sm:text-base">
+              - Pastor Richard Makhenjera
+            </span>
+          </div>
         </div>{" "}
       </div>
-
+      <div className="w-[70%] m-auto">
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          className="p-4 text-center"
+        >
+          <motion.h1
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="font-heading text-semi_heading_color text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold p-5"
+          >
+            <div className="w-full mb-6 md:mb-0 p-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
+                Our Identity &
+                <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
+                  Mission
+                  <span
+                    className="absolute bg-brand_color inset-0 ml-2 skew-x-[-15deg]"
+                    aria-hidden="true"
+                    style={{
+                      zIndex: -1,
+                      transformOrigin: "right",
+                    }}
+                  ></span>
+                </span>
+              </h1>
+            </div>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5 }}
+            className="font-heading_secondary text-base"
+          >
+            Zomba Baptist Church is dedicated to give and serve God and other
+            people in the City of Zomba, Zomba District, Malawi, and other parts
+            of the world,with the the help of the Holy Spirit. <br />
+            <strong>
+              Mathew 20 vs 28 , Mathew 28 vs 18-20 and Acts 1 vs 8
+            </strong>
+          </motion.p>
+        </motion.section>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5 }}
+          className="flex flex-col md:flex-row items-center justify-center"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="p-4 w-full md:w-1/2 text-center"
+          >
+            <motion.h5
+              ref={ref}
+              className={headingStyle}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+            >
+              <CountUp end={500} duration={2.5} start={isInView ? null : 0} />{" "}
+              members
+            </motion.h5>
+            <p className="font-heading_secondary">
+              With over 500 members, we are a thriving community committed to
+              living out our faith and supporting one another.
+            </p>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="p-4 w-full md:w-1/2 text-center"
+          >
+            <motion.h5
+              ref={ref}
+              className={headingStyle}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+            >
+              <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
+              outreach programs
+            </motion.h5>
+            <p className="font-heading_secondary">
+              We engage in numerous outreach programs, impacting the lives of
+              100 individuals and families in our community each year.
+            </p>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.7 }}
+          className="flex flex-col md:flex-row items-center justify-center"
+        >
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="p-4 w-full md:w-1/2 text-center"
+          >
+            <motion.h5
+              ref={ref}
+              className={headingStyle}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+            >
+              <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
+              years
+            </motion.h5>
+            <p className="font-heading_secondary">
+              For over 20 years, Zomba Baptist Church has been a beacon of hope
+              and faith in our community, guiding individuals on their spiritual
+              journeys.
+            </p>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="p-4 w-full md:w-1/2 text-center"
+          >
+            <motion.h5
+              ref={ref}
+              className={headingStyle}
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+            >
+              <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
+              ministries
+            </motion.h5>
+            <p className="font-heading_secondary">
+              We offer 10 active ministries that cater to various needs,
+              ensuring everyone finds a place to grow and serve.
+            </p>
+          </motion.div>
+        </motion.div>
+      </div>
       <div className="container mx-auto mt-[5rem]  flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Church Activities Overview</h1>
 
