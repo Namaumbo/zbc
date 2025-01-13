@@ -4,7 +4,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import NavBarComponent from "../../components/NavBarComponent";
 import "animate.css";
 import ScrollReveal from "scrollreveal";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useScroll, useTransform,} from "framer-motion";
 import { CarouselComponent } from "../../components/CarouselComponent";
 // import UserCardComponent from "../../components/UserCardComponent";
 // import CountUp from "react-countup";
@@ -17,7 +17,7 @@ const LandingPage = () => {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 200, 300, 500], [1, 0.5, 0.5, 0]);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  // const isInView = useInView(ref, { once: true });
   const [scrollPosition, setScrollPosition] = React.useState(0);
 
   React.useEffect(() => {
@@ -25,6 +25,8 @@ const LandingPage = () => {
       const position = window.pageYOffset;
       setScrollPosition(position);
     };
+
+
 
     ScrollReveal().reveal(".reveal", {
       duration: 600,
@@ -356,7 +358,11 @@ const LandingPage = () => {
           </motion.div>{" "}
           <motion.div className="flex-1">
             <div className="relative">
-              <img src="/inchurch.jpg" alt="worship" className="z-50" />
+              <img
+                src="/inchurch.jpg"
+                alt="worship"
+                className="z-50 rounded-lg"
+              />
             </div>
             <svg
               viewBox="30 150 1280 1280"
