@@ -83,14 +83,7 @@ const LandingPage = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -50 }}
-              animate={
-                isInView
-                  ? {
-                      opacity: 1,
-                      x: 0,
-                    }
-                  : {}
-              }
+              animate={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 1,
                 ease: "easeOut",
@@ -100,15 +93,27 @@ const LandingPage = () => {
               <img
                 src="/pastorPicture.jpg"
                 alt="pastor&wife"
-                className="w-full h-[35rem] object-cover object-top rounded-lg "
-              />
+                className="w-full h-[35rem] object-cover object-top rounded-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl filter hover:brightness-110 hover:contrast-110"
+                style={{
+                  boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                  transform: "perspective(1000px) rotateY(0deg)",
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform =
+                    "perspective(1000px) rotateY(5deg)";
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform =
+                    "perspective(1000px) rotateY(0deg)";
+                }}
+              />{" "}
             </motion.div>
             <p className="block text-right italic font-semibold text-brand_color mt-2">
               - Pastor R Makhenjera and Wife
             </p>
           </motion.div>
         </div>
-        <div className="w-full md:w-1/2 md:ml-[-4rem] z-10">
+        <div className="w-full md:w-1/2 md:ml-[-4rem] z-10 mt-[15rem]">
           <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md mx-4 sm:mx-0">
             <h3 className="text-xl sm:text-2xl font-heading text-semi_heading_color font-bold mb-3">
               Hello in Jesus Name!
@@ -124,7 +129,7 @@ const LandingPage = () => {
               - Pastor Richard Makhenjera
             </span>
           </div>
-        </div>{" "}
+        </div>
       </div>
       <div className="w-[70%] m-auto">
         <motion.section
@@ -156,7 +161,7 @@ const LandingPage = () => {
               </h1>
             </div>
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
@@ -168,96 +173,121 @@ const LandingPage = () => {
             <strong>
               Mathew 20 vs 28 , Mathew 28 vs 18-20 and Acts 1 vs 8
             </strong>
-          </motion.p>
+          </motion.p> */}
         </motion.section>
+
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1.5 }}
-          className="flex flex-col md:flex-row items-center justify-center"
+          className="w-full px-4 py-16 bg-cover bg-center bg-opacity-10"
+          style={{ backgroundImage: `url(${background})` }}
         >
           <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="p-4 w-full md:w-1/2 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-5xl mx-auto space-y-16 bg-white/80 p-8 rounded-2xl backdrop-blur-sm"
           >
-            <motion.h5
-              ref={ref}
-              className={headingStyle}
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-            >
-              <CountUp end={500} duration={2.5} start={isInView ? null : 0} />{" "}
-              members
-            </motion.h5>
-            <p className="font-heading_secondary">
-              With over 500 members, we are a thriving community committed to
-              living out our faith and supporting one another.
-            </p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="p-4 w-full md:w-1/2 text-center"
-          >
-            <motion.h5
-              ref={ref}
-              className={headingStyle}
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-            >
-              <CountUp end={30} duration={2.5} start={isInView ? null : 0} />{" "}
-              outreach programs
-            </motion.h5>
-            <p className="font-heading_secondary">
-              We engage in numerous outreach programs, impacting the lives of
-              100 individuals and families in our community each year.
-            </p>
-          </motion.div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.7 }}
-          className="flex flex-col md:flex-row items-center justify-center"
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="p-4 w-full md:w-1/2 text-center"
-          >
-            <motion.h5
-              ref={ref}
-              className={headingStyle}
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-            >
-              <CountUp end={45} duration={2.5} start={isInView ? null : 0} />{" "}
-              years
-            </motion.h5>
-            <p className="font-heading_secondary">
-              For over 20 years, Zomba Baptist Church has been a beacon of hope
-              and faith in our community, guiding individuals on their spiritual
-              journeys.
-            </p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="p-4 w-full md:w-1/2 text-center"
-          >
-            <motion.h5
-              ref={ref}
-              className={headingStyle}
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-            >
-              <CountUp end={10} duration={2.5} start={isInView ? null : 0} />{" "}
-              ministries
-            </motion.h5>
-            <p className="font-heading_secondary">
-              We offer 10 active ministries that cater to various needs,
-              ensuring everyone finds a place to grow and serve.
-            </p>
+            <div className="text-center">
+              <motion.h2
+                className={`${headingStyle} text-4xl mb-6`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                Who are We?
+              </motion.h2>
+              <motion.p
+                className="font-heading_secondary mt-4 text-lg leading-relaxed max-w-2xl mx-auto"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+              >
+                We are a Christ-centred church growing in the Word of God.
+              </motion.p>
+            </div>
+
+            <div className="text-center">
+              <motion.h2
+                className={`${headingStyle} text-4xl mb-6`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+              >
+                What is Our Mission?
+              </motion.h2>
+              <motion.p
+                className="font-heading_secondary mt-4 text-lg leading-relaxed max-w-3xl mx-auto"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+              >
+                As a body of Christ, we let the Holy Spirit guide us to serve
+                God and others throughout the City of Zomba, the District of
+                Zomba, and beyond, fulfilling our calling as described in
+                Matthew 20:28, Matthew 28:18-20, and Acts 1:8.
+              </motion.p>
+            </div>
+
+            <div className="text-center">
+              <motion.h2
+                className={`${headingStyle} text-4xl mb-6 w-[80%] text-center mx-auto`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+              >
+                How do we carry out our mission?
+              </motion.h2>
+              <motion.p
+                className="font-heading_secondary mt-4 text-lg leading-relaxed"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+              >
+                We are guided by the fruits of the Spirit:
+              </motion.p>
+              <motion.div
+                className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9 }}
+              >
+                <motion.div
+                  className="p-8 bg-white/95 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <p className="font-heading_secondary text-lg">
+                    Love • Joy • Peace
+                  </p>
+                </motion.div>
+                <motion.div
+                  className="p-8 bg-white/95 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <p className="font-heading_secondary text-lg">
+                    Patience • Kindness • Goodness
+                  </p>
+                </motion.div>
+                <motion.div
+                  className="p-8 bg-white/95 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  whileHover={{ scale: 1.02 }}
+                >
+                  <p className="font-heading_secondary text-lg">
+                    Faithfulness • Gentleness • Self-control
+                  </p>
+                </motion.div>
+              </motion.div>
+              <motion.p
+                className="font-heading_secondary mt-8 text-base italic text-gray-600"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1 }}
+              >
+                — Galatians 5:22-23
+              </motion.p>
+            </div>
           </motion.div>
         </motion.div>
       </div>
+
       <div className="container mx-auto mt-[5rem]  flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Church Activities Overview</h1>
 
