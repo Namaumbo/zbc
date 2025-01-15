@@ -24,10 +24,11 @@ const ParallaxScroll = () => {
               Join Our Community Church Ministries
             </h2>
             <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
-              Experience the joy of giving back and making a difference. At
-              Zomba Baptist, we are dedicated to spreading love and hope through
-              our community service programs. Get involved and help us create a
-              positive impact.
+              Serve and give by being God’s coworker and part of His field and
+              building.
+            </p>
+            <p className="font-bold text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
+              1 Corinthians 3:9
             </p>
             <Button className="mt-4 p-2 bg-brand_color">Learn More</Button>
           </div>
@@ -43,7 +44,7 @@ const ParallaxScroll = () => {
       >
         <div className="w-full mb-6 md:mb-0 p-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-semi_heading_color mb-4 md:pr-8 font-heading text-center">
-            Our 
+            Our
             <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
               Ministries
               <span
@@ -57,8 +58,7 @@ const ParallaxScroll = () => {
             </span>
           </h1>
         </div>
-     
-      
+
         <MinistryComponent />
       </div>
     </div>

@@ -272,8 +272,9 @@ const LandingPage = () => {
 
       <div className="container mx-auto mt-[5rem]  flex flex-col justify-center items-center">
         <h1 className={headingStyle}>Church Activities Overview</h1>
-        <motion.div className=" container mx-auto flex flex-row justify-center items-center mt-[5rem]">
-          <motion.div className="flex-1 p-4">
+       
+        <motion.div className="container mx-auto flex flex-col md:flex-row justify-center items-center mt-[5rem]">
+          <motion.div className="w-full md:flex-1 p-4">
             <h1 className={headingStyle}>
               Sunday Worship
               <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
@@ -289,7 +290,7 @@ const LandingPage = () => {
               </span>
             </h1>
 
-            <p className="font-heading_secondary text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
+            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
               We invite you to join us in worship and fellowship. Experience the
               warmth of our community as we gather together to praise God and
               grow in faith. "For where two or three gather in my name, there am
@@ -297,41 +298,41 @@ const LandingPage = () => {
               <span className="font-semibold">Matthew 18:20</span>
             </p>
 
-            <p className="font-heading_secondary text-xl mt-6 mb-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">International Service:</span>
               <span>8:30 AM - 10:45 AM</span>
             </p>
-            <p className="font-heading_secondary text-xl mt-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">Chichewa Service:</span>
               <span>10:00 AM - 12:00 PM</span>
             </p>
-          </motion.div>{" "}
-          <motion.div className="flex-1">
+          </motion.div>
+          <motion.div className="w-full md:flex-1 px-4 md:px-0">
             <div className="relative">
               <img
                 src="/inchurch.jpg"
                 alt="worship"
-                className="z-50 rounded-lg"
+                className="z-50 rounded-lg w-full"
               />
             </div>
-          <SquareDots/>
+            <SquareDots/>
           </motion.div>
         </motion.div>
 
-        <motion.div className=" flex flex-row justify-center items-center mt-[10rem]">
-          <motion.div className="flex-1">
+        <motion.div className="flex flex-col md:flex-row justify-center items-center mt-[10rem]">
+          <motion.div className="w-full md:flex-1 px-4 md:px-0">
             <div className="relative">
               <img
                 src="/bg-3.jpg"
                 alt="worship"
-                className="z-50 rounded-lg"
+                className="z-50 rounded-lg w-full"
               />
             </div>
             <SquareDots />
           </motion.div>
-          <motion.div className="flex-1 p-4 mt-[-4rem]">
+          <motion.div className="w-full md:flex-1 p-4 md:mt-[-4rem]">
             <h1 className={headingStyle}>
               Corporate Prayer
               <span className="relative z-[1] inline-block ml-1 text-white px-4 py-2">
@@ -347,29 +348,29 @@ const LandingPage = () => {
               </span>
             </h1>
 
-            <p className="font-heading_secondary text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
+            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
               Join us in our dedicated corporate prayer sessions where we come
               together as a community to seek God's presence, intercede for one
               another, and experience the power of unified prayer.
             </p>
 
-            <p className="font-heading_secondary text-xl mt-6 mb-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">Wednesday, 16:00 to 17:00</span>
             </p>
-            <p className="font-heading_secondary text-xl mt-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">
                 Last Friday of the month: Overnight from 20:00
               </span>
             </p>
-            <p className="font-heading_secondary text-xl mt-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">
                 First Wednesday of the month: Prayer and fasting up to 17:00
               </span>
             </p>
-            <p className="font-heading_secondary text-xl mt-4 text-gray-800 flex items-center space-x-3">
+            <p className="font-heading_secondary text-lg md:text-xl mt-4 text-gray-800 flex items-center space-x-3">
               <span className="w-2 h-2 bg-brand_color rounded-full"></span>
               <span className="font-semibold">
                 First Monday to Friday of every quarter: 5 days of prayer and
@@ -377,8 +378,7 @@ const LandingPage = () => {
               </span>
             </p>
           </motion.div>
-        </motion.div>
-      </div>
+        </motion.div>      </div>
    
      
     </>

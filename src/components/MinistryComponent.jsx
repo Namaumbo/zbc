@@ -26,6 +26,7 @@ export default function MinistryComponent() {
                 <p className="block text-base font-light leading-relaxed font-heading_secondary antialiased">
                   {ministry.description}
                 </p>
+                <p>{ministry.verse}</p>
               </div>
               <div className="p-4 pt-0">
                 <button

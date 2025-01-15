@@ -2,7 +2,7 @@ import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import TeamComponent from "../../components/TeamComponent";
 import { Button } from "flowbite-react";
-import CoreValuesComponent from "../../components/About/CoreValuesComponent";
+// import CoreValuesComponent from "../../components/About/CoreValuesComponent";
 
 const AboutPage = () => {
   // const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -66,7 +66,7 @@ const AboutPage = () => {
           <div className="absolute inset-0 bg-blue-900/60">
             <div className="flex flex-col items-center justify-center h-full text-center px-4">
               <h2 className=" font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
-                About Zomba Baptist Church, Mw
+                About Zomba Baptist Church, Malawi
               </h2>
               <p className="text-xl md:text-lg sm:text-base xs:text-sm max-w-2xl text-white font-heading_secondary">
                 We are a Jesus-centered church committed to sharing God's love
@@ -81,34 +81,59 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div>
+
+      {/* core values  */}
+      {/* <div>
         <CoreValuesComponent />
-      </div>
+      </div> */}
       <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
-            Our Vision
+            Our Story
           </h2>
-          <h1 className="text-semi_heading_color text-4xl md:text-5xl font-bold mb-4 font-heading">
-            we are a <span className="text-brand_color">Baptist</span> church.
+          <h1 className="text-semi_heading_color text-4xl md:text-5xl font-bold mb-6 font-heading bg-gradient-to-r from-brand_color to-blue-600 bg-clip-text ">
+            <span className="">Membership</span>
           </h1>
-          <p className="mb-6 font-heading_secondary">
-            Zomba baptist stared in 1979 by the Southen Baptist Convention
-            Missionaries. Late Pastor Kachase Gama, together with the
-            Missionaries, planted the church right in the city of zomba. Late
-            Pastor Kachasu Gama became the first pastor.In its first days, the
-            church was meeting in a garage of one of the Missionaries before
-            relocating to Zomba Community ground.
+          <p className="mb-8 font-heading_secondary space-y-4 text-gray-700">
+            <span className="block flex items-center">
+              <span className="text-brand_color mr-2">•</span> Over 500 active
+              members in our vibrant community
+            </span>
+            <span className="block flex items-center">
+              <span className="text-brand_color mr-2">•</span> Diverse
+              congregation united in faith and worship
+            </span>
+            <span className="block flex items-center">
+              <span className="text-brand_color mr-2">•</span> Led by dedicated
+              pastoral leadership
+            </span>
+            <span className="block flex items-center">
+              <span className="text-brand_color mr-2">•</span> Inclusive
+              membership structure comprising:
+            </span>
+            <ul className="pl-8 space-y-2">
+              <li className="flex items-center">
+                <span className="w-2 h-2 rounded-full bg-brand_color mr-3"></span>
+                Senior Pastor
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 rounded-full bg-brand_color mr-3"></span>
+                Full Members
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 rounded-full bg-brand_color mr-3"></span>
+                Associate Members
+              </li>
+            </ul>
           </p>
-          <Button className="bg-brand_color">Learn More</Button>
-        </div>
+        </div>{" "}
         <div className="md:w-1/2 ">
           {/* <video controls className="w-full">
             <source src="https://youtu.be/QXowrFiSPwo?si=oompmbQ2WbpD2dt3" type="video/mp4" />
             Your browser does not support the video tag.
           </video> */}
 
-          <iframe
+          {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/QXowrFiSPwo?si=oVS5122f0SXLVnrI"
@@ -117,13 +142,14 @@ const AboutPage = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
+
       <div className="bg-black ">
         <div className="container mx-auto py-8">
           <h2 className="text-3xl md:text-4xl font-bold  text-white font-heading text-center pb-4">
-            Our Team
+            Our Structures
           </h2>
           <div>
             <TeamComponent
