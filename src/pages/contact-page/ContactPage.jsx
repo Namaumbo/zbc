@@ -76,7 +76,7 @@ const ContactPage = () => {
             <p className="text-gray-500 font-semibold">
               Interested to speak with us? Call us at:
             </p>
-            <p className="font-heading">0999999999</p>
+            <p className="font-heading">+265993740261</p>
             <hr className="my-4" />
           </div>
           <div className="mt-6 md:mt-8">
@@ -86,7 +86,11 @@ const ContactPage = () => {
             <p className="text-gray-500 font-semibold">
               Interested to speak Email Us?:
             </p>
-            <p className="font-heading">admin@zbc.com</p>
+            <p className="font-heading">zombabaptistchurch@gmail.com</p>
+
+            <p className="font-heading">
+              Pastor’s email address: richardmakhenjera:gmail.com
+            </p>
             <hr className="my-4" />
           </div>
           <div className="mt-6 md:mt-8">
