@@ -8,19 +8,19 @@ export function CarouselComponent() {
     {
       title: "Welcome to ZBC",
       description: "To Serve and To Give  ",
-      verse: "Mathew 20 v 20 & Mark 10 v 45",
-    },
-    {
-      title: "Grow in Faith Together",
-      description:
-        "Join us in our journey of faith as we learn, worship, and fellowship with God Almighty and each other.",
-      verse: "",
+      verse: "Mathew 20 v 28 & Mark 10 v 45",
     },
     {
       title: "God Loves You",
       description:
-        "At ZBC we know that God loves you that He gave His Son so that you should have eternal life",
+        "At ZBC, we know that because God loves you, He gave His Son for you to be saved and have eternal life",
       verse: "John 3 v 16",
+    },
+    {
+      title: "Be Jesus' Disciple with Others",
+      description:
+        "Join us in our journey of faith as we learn, worship, and fellowship with God Almighty and each other.",
+      verse: "Mathew 28:18-20",
     },
   ];
 
