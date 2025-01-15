@@ -6,7 +6,7 @@ import "animate.css";
 import ScrollReveal from "scrollreveal";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { CarouselComponent } from "../../components/CarouselComponent";
-// import UserCardComponent from "../../components/UserCardComponent";
+import UserCardComponent from "../../components/UserCardComponent";
 // import CountUp from "react-countup";
 // import { DatePickerComponent } from "../../components/DatePickerComponent";
 // import { FiMapPin } from "react-icons/fi";
@@ -402,99 +402,8 @@ const LandingPage = () => {
           </motion.div>
         </motion.div>
       </div>
-      {/* <div className="container mx-auto  flex flex-col justify-center items-center ">
-        <h1 className={headingStyle}>Our Community Talk & Testimonies</h1>
-
-        <div className="w-full">
-          <UserCardComponent />
-        </div>
-      </div> */}
-
-      {/* <motion.div className="container mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-        <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color ">
-            Empowering Our Community Through Service & Hope
-          </h1>
-        </div>
-        <div className="w-full md:w-1/2">
-          <p className="font-heading_secondary">
-            Zomba Baptist Church is committed to making a positive impact
-            through our outreach initiatives. We engage in various community
-            service programs that aim to spread love, hope, and the teachings of
-            Christ. Join us in our mission to foster spiritual growth and
-            support those in need.
-          </p>
-        </div>
-      </motion.div> */}
-
-      {/* <div className="">
-        <EmpoweringComponent />
-      </div> */}
-
-      {/* <div className=" container mx-auto mt-16">
-        <motion.div className="container  mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-          <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color">
-              Join Our Community Through Service
-            </h1>
-          </div>
-          <div className="w-full md:w-1/2 ">
-            <p className="font-heading_secondary">
-              Discover how you can make a difference in our church and
-              community. Participate in various activities that strengthen our
-              bonds and spread love. Your involvement is crucial in carrying out
-              our mission and supporting those in need.
-            </p>
-            <div className="flex gap-4 mt-6 justify-center md:justify-start">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-4 bg-second_brand_color text-white rounded-md font-semibold hover:bg-[#0e7490]transition-colors"
-              >
-                Explore More
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-4 bg-gray-500 text-white rounded-md font-semibold hover:bg-gray-700 transition-colors"
-              >
-                Learn More
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
-      </div> */}
-
-      {/* <div className="container mx-auto mt-16">
-        <motion.div className="container  mx-auto p-6 md:p-10 flex flex-col md:flex-row justify-center">
-          <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold  md:pr-8 font-heading text-semi_heading_color">
-              Join us and Experience The Power of Faith This (Sun)Sunday!
-            </h1>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-4 bg-second_brand_color text-white rounded-md font-semibold hover:bg-gray-700 transition-colors mt-4"
-            >
-              <div className="flex items-center justify-center gap-2 text-center                                                                                                                                                                                                                                                                                                                                      ">
-                <FiMapPin size={25} /> <span>Ask For Directions</span>
-              </div>
-            </motion.button>
-          </div>
-
-          <div className="w-full md:w-1/2 ">
-            <p className=" font-heading_secondary">
-              Come and experience the warmth of our welcoming church family.
-              Join us for uplifting worship services, meaningful connections,
-              and spiritual growth. Whether you're seeking peace, purpose, or
-              community, our doors are always open to welcome you home.
-            </p>
-            <div className="text-center">
-              <DatePickerComponent />
-            </div>
-          </div>
-        </motion.div>
-      </div> */}
+   
+     
     </>
   );
 };
