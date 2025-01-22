@@ -28,7 +28,7 @@ export default function MinistryComponent() {
                 </p>
                 <p>{ministry.verse}</p>
               </div>
-              <div className="p-4 pt-0">
+              <div className="p-4 pt-0 flex justify-end">
                 <button
                   data-ripple-light="true"
                   type="button"
