@@ -1,7 +1,7 @@
-import { Button } from "flowbite-react";
+// import { Button } from "flowbite-react";
 import NavBarComponent from "../../components/NavBarComponent";
 import SquareDots from "../../components/SquareDots";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function AboutPageExplaination() {
   const headingStyle =
