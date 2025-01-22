@@ -330,7 +330,16 @@ const AboutPage = () => {
               <li>UBIA Ministries (United States of America)</li>
             </ul>
             <div className="pt-4 flex justify-end">
-              <Button>Read More</Button>
+              <button
+                data-ripple-light="true"
+                type="button"
+                className="select-none rounded-lg bg-second_brand_color py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40"
+                onClick={() => {
+                  window.location.href = "/about/association";
+                }}
+              >
+                Read More
+              </button>
             </div>
           </div>
         </div>

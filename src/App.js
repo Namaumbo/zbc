@@ -11,6 +11,7 @@ import EventsPage from "./pages/events-page/EventsPage.jsx";
 import SermonArchive from "./pages/sermon-archive/SermonArchive.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent.jsx";
+import { AboutPageExplaination } from "./pages/about-explaination-page/AboutPageExplaination.jsx";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/services" element={<SermonArchive />} />
+          <Route
+            path="/about/association"
+            element={<AboutPageExplaination />}
+          />
         </Routes>
         <div className="mt-10">
           <FooterComponent />
