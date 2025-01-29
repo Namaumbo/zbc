@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import NavBarComponent from "../../components/NavBarComponent";
 import { Button } from "flowbite-react";
-import ServiceComponent from "../../components/services/ServiceComponent";
+// import ServiceComponent from "../../components/services/ServiceComponent";
 
 const SermonArchive = () => {
   return (
@@ -48,12 +48,15 @@ const SermonArchive = () => {
         </div>
       </motion.div>
 
-      <motion.div className="container mx-auto p-6 md:p-10">
+      <motion.div className="container mx-auto p-6 md:p-10 flex">
         <img
           src="/zbc-images/WhatsApp Image 2025-01-27 at 15.53.38.jpeg"
           alt="ZBC"
           className="w-[35%] rounded-lg shadow-lg h-[35%]"
         />
+        <div>
+          We have a vibrant one here
+        </div>
       </motion.div>
     </div>
   );
