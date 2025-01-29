@@ -3,7 +3,7 @@ const MinistriesExplaination = [
     ministry: "Women's Ministry",
     explaination:
       "This is the ministry for women. The aim is to disciple one another to grow in faith in Christ. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Corinthians 3:9",
-    coverPage: "/womenMinistry.jpg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 17.34.38.jpeg",
     description:
       "Serve and give by being God’s coworker and part of His field and building.",
     verse: "1 Corinthians 3:9",
@@ -20,7 +20,7 @@ const MinistriesExplaination = [
   {
     ministry: "Girls Auxiliary Ministry",
     explaination: "Contents to come ",
-    coverPage: "/GA.jpg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 19.43.47.jpeg",
     description:
       "Nurturing young girls in faith, character development, and leadership skills.",
     verse: "Proverbs 31:25",
@@ -29,7 +29,7 @@ const MinistriesExplaination = [
     ministry: "Youth Ministry ",
     explaination:
       "This is the ministry for young people or adolescents and young women and young men, aged around 15 to 35 years. The aim of this ministry is to disciple young people to grow in their relationship with God. They meet on Sundays after Chichewa service. When they meet, they do Bible study, pray together and also do some sporting activities. 1 Timothy 6: 11-12.",
-    coverPage: "/youthMinistry.jpg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 15.51.17.jpeg",
     description:
       "Empowering youth through faith-based activities, worship, and leadership development.",
     verse: "1 Timothy 6:11-12",
@@ -38,7 +38,7 @@ const MinistriesExplaination = [
     ministry: "Young Lady Ministry",
     explaination:
       "This is the ministry for men. The aim of this ministry is to disciple men to grow in their relationship with God. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Timothy 4:12.",
-    coverPage: "/menMinistry.jpg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 16.47.32.jpeg",
     description: ": Shaping young women aged 17-35 to become exemplary women.",
     verse: "1 Timothy 4:12",
   },
@@ -47,7 +47,7 @@ const MinistriesExplaination = [
     explaination:
       "The aim of this ministry is to provide a Christian learning and instruction environment, facilities through which God teaches, prepares and develops learners in the city of Zomba. Psalms 32:8",
     coverPage:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop",
+      "/zbc-images/WhatsApp Image 2025-01-27 at 15.15.15.jpeg",
     description:
       "Providing Christ-centered education and resources to develop spiritual and academic growth in our community.",
     verse: "Psalms 32:8",
@@ -65,7 +65,7 @@ const MinistriesExplaination = [
     ministry: "Men's Ministry",
     explaination:
       " This is the ministry is founded on Proverbs 27:17, which states that as an iron sharpens iron, so a friend sharpens a friend. The aim of the ministry is to disciple each other and encourage men to be active in their local churches, communities, and exemplary in their homes.",
-    coverPage: "/menMinistry.jpg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 17.32.11.jpeg",
     description:
       "Building strong, godly men through fellowship, accountability, and spiritual development.",
     verse: "Proverbs 27:17",
@@ -84,7 +84,7 @@ const MinistriesExplaination = [
     explaination:
       "The aim of this ministry is to facilitate the praise and worship of God among church members and in congregations. Colossians 3:16.",
     coverPage:
-      "https://scontent.fblz3-1.fna.fbcdn.net/v/t1.6435-9/122752864_3501743933241137_4250066801791779480_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH13dFfXAwuLTsMOhSz0V3nj7WQM_UA6lmPtZAz9QDqWV-4hqM9ZW3EfpaaNG1DUA-2ykDtE8ooWjVC4gKbXnpd&_nc_ohc=cDMQotXrDsEQ7kNvgGHeq9V&_nc_zt=23&_nc_ht=scontent.fblz3-1.fna&_nc_gid=A_P5v839n9tn5V4flrZtjMn&oh=00_AYA3lpmtdA2eG3nHjwTPmFPANeygfBPfSGCsjkcYyDkIQQ&oe=677FABC7",
+      "/zbc-images/WhatsApp Image 2025-01-27 at 17.25.17.jpeg",
     description:
       "Leading worship through music and developing musical talents for God's glory.",
     verse: "Colossians 3:16",
