@@ -86,7 +86,7 @@ const FooterComponent = () => {
             </li>
           </ul>
         </div>
-        <div className=" p-5 gap-4  flex-1 bg-[#404048]">
+        <div className=" p-5 gap-4  flex-1 bg-[#404048] rounded-md">
           <div>
             <p className="font-heading_secondary text-white font-semibold text-sm mb-5">
               For More information
