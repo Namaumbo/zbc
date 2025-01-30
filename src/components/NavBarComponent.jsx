@@ -95,7 +95,9 @@ const NavBarComponent = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="ml-4 bg-[#6B21A8] hover:bg-[#6B21A8] " size="xl">
+              <Button
+                onClick={() => (window.location.href = "/about")}
+               className="ml-4 bg-[#6B21A8] hover:bg-[#6B21A8] " size="xl">
                 Get Involved
               </Button>
             </motion.div>

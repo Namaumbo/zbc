@@ -20,38 +20,51 @@ const AboutPage = () => {
   }, []);
 
   const second_rank = [
-    { fullName: "Garton Kamchedzera", position: "Chief Elder" },
-    { fullName: "Kelvin Gunya", position: "Elder" },
-    { fullName: "Mary Mlenga", position: "Elder" },
-    { fullName: "Nales Petro", position: "Deaconess" },
+    {
+      fullName: "Garton Kamchedzera",
+      position: "Chief Elder",
+      image: "/placeholder.jpg",
+    },
+    { fullName: "Mr Kelvin Gunya", position: "Elder", image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.51.27.jpeg" },
+    { fullName: "Mr Me Mopiha", position: "Church Secretary", image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.49.02.jpeg" },
+    {
+      fullName: "Nales Petro",
+      position: "Deaconess",
+      image: "/placeholder.jpg",
+    },
   ];
   const third_rank = [
     {
       fullName: "Laston Simenti",
       position: "Chief Deacon",
+      image: "/placeholder.jpg",
     },
     {
       fullName: "Humphrey Topesa",
       position: "Deacon",
+      image: "/placeholder.jpg",
     },
     {
       fullName: "Mark Chande",
       position: "Deacon",
+      image: "/placeholder.jpg",
     },
     {
       fullName: "Albert Botomani",
       position: "Deaconess",
+      image: "/placeholder.jpg",
     },
     {
       fullName: "Chrissy Kubwalo",
       position: "Deaconess",
+      image: "/placeholder.jpg",
     },
     {
       fullName: "Sakina Mtunga",
       position: "Deaconess",
+      image: "/placeholder.jpg",
     },
   ];
-
   return (
     <>
       <div className="">
@@ -165,7 +178,7 @@ const AboutPage = () => {
                   <TeamComponent
                     fullName={person.fullName}
                     position={person.position}
-                    image="/pastor.jpg"
+                    image={person.image}
                   />
                 </div>
               );
@@ -178,7 +191,7 @@ const AboutPage = () => {
                   <TeamComponent
                     fullName={person.fullName}
                     position={person.position}
-                    image="/pastor.jpg"
+                    image={person.image}
                   />
                 </div>
               );

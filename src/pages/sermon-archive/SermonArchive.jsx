@@ -48,16 +48,98 @@ const SermonArchive = () => {
         </div>
       </motion.div>
 
-      <motion.div className="container mx-auto p-6 md:p-10 flex">
-        <img
-          src="/zbc-images/WhatsApp Image 2025-01-27 at 15.53.38.jpeg"
-          alt="ZBC"
-          className="w-[35%] rounded-lg shadow-lg h-[35%]"
-        />
-        <div>
-          We have a vibrant one here
+      {/* <motion.div className="container p-6 md:p-10 flex mx-auto ">
+        <div className="w-full h-full">
+          <img
+            src="/zbc-images/WhatsApp Image 2025-01-27 at 15.53.38.jpeg"
+            alt="ZBC"
+            className="w-[100%] shadow-lg h-[100%]"
+          />
+        </div>
+
+        <div className="mt-8">
+          <h2 className="ml-8 text-3xl font-heading font-bold text-semi_heading_color mb-4">
+            Our Worship Experience
+          </h2>
+          <p className="ml-8 text-lg text-gray-700 leading-relaxed w-[70%]">
+            At Zomba Baptist Church, our worship services are a vibrant
+            celebration of God's love and grace, featuring contemporary and
+            traditional hymns that uplift the soul. Our dedicated worship team
+            leads the congregation in meaningful worship experiences that
+            combine musical excellence with spiritual depth, helping people
+            connect with God in profound ways.
+          </p>
         </div>
       </motion.div>
+
+      <motion.div className="container p-6 md:p-10 flex mx-auto ">
+        <div className="mt-8">
+          <h2 className="ml-8 text-3xl font-heading font-bold text-semi_heading_color mb-4">
+            Our Worship Experience
+          </h2>
+          <p className="ml-8 text-lg text-gray-700 leading-relaxed w-[70%]">
+            At Zomba Baptist Church, our worship services are a vibrant
+            celebration of God's love and grace, featuring contemporary and
+            traditional hymns that uplift the soul. Our dedicated worship team
+            leads the congregation in meaningful worship experiences that
+            combine musical excellence with spiritual depth, helping people
+            connect with God in profound ways.
+          </p>
+        </div>
+
+        <div className="w-full h-full  mt-[-10rem]">
+          <img
+            src="/zbc-images/WhatsApp Image 2025-01-27 at 15.53.38.jpeg"
+            alt="ZBC"
+            className="w-[100%] shadow-lg h-[100%]"
+          />
+        </div>
+      </motion.div> */}
+
+      <div className="container mx-auto p-6 md:p-10 flex flex-col md:flex-row gap-8 w-[80%]">
+        <div className="flex-1">
+          <div className="w-full aspect-video ">
+            <img
+              src="/zbc-images/WhatsApp Image 2025-01-27 at 15.53.38.jpeg"
+              alt="ZBC"
+              className="w-full h-full object-cover rounded-sm shadow-lg"
+            />
+          </div>
+
+          <div className="mt-8">
+            <h2 className="text-3xl font-heading font-bold text-semi_heading_color mb-4">
+              Our Worship Experience
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              At Zomba Baptist Church, we offer vibrant worship services that
+              blend contemporary and traditional hymns. Our talented worship
+              team leads the congregation that deepen your connection with God.
+            </p>
+          </div>
+        </div>
+        <div className="flex-1">
+          <div className="mt-8 md:mt-0">
+            <h2 className="text-3xl font-heading font-bold text-semi_heading_color mb-4">
+              Our Joyful Worship Experience
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed pb-2">
+              Join us in our joyful celebration of faith where every service is
+              filled with uplifting music, heartfelt praise, and spiritual
+              connection. Our worship services create an atmosphere of joy and
+              reverence, welcoming all to experience God's presence in a
+              meaningful way.
+            </p>
+            <Button onClick={()=>{window.location.href ="/contact"}} className="bg-second_brand_color">Join Us</Button>
+          </div>
+          <div className="w-full aspect-video mt-8">
+            <img
+              src="/zbc-images/WhatsApp Image 2025-01-27 at 15.57.03.jpeg"
+              alt="ZBC"
+              className="w-full h-full object-cover rounded-sm shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
