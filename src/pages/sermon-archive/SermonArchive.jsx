@@ -40,7 +40,7 @@ const SermonArchive = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              <Button className="bg-brand_color hover:bg-brand_color/90 px-8 py-3 text-lg">
+              <Button className=" mx-auto bg-brand_color hover:bg-brand_color/90 px-8 py-3 text-lg">
                 Learn More
               </Button>
             </motion.div>

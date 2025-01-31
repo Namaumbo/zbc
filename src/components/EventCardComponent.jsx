@@ -1,29 +1,76 @@
-import { Button } from "flowbite-react";
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
 
-const EventCardComponent = ({ event }) => {
+const EventCardComponent = () => {
   return (
-    <>
-      <div className="bg-white rounded-r-md relative p-5 rounded-md shadow-lg">
-        <div className="bg-white rounded-md absolute p-2 top-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <span className="text-orange-500 font-bold">November 1, 2024</span>
+    <StyledWrapper>
+      <div className="card">
+        <div className="card-details">
+          <p className="text-title">Card title</p>
+          <p className="text-body">Here are the details of the card</p>
         </div>
-        <img
-          src="/events.jpg"
-          alt="Church Event"
-          className="w-full h-full object-cover rounded-md "
-        />
-        <div>
-        <h2 className="pt-5">Holiday Care</h2>
-        <p className="pt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          iste libero..
-        </p>
-        <Button className="mt-4">Read More</Button>
+        <button className="card-button">More info</button>
       </div>
-      </div>
-    </>
+    </StyledWrapper>
   );
-};
+}
+
+const StyledWrapper = styled.div`
+  .card {
+   width: 190px;
+   height: 254px;
+   border-radius: 20px;
+   background: #f5f5f5;
+   position: relative;
+   padding: 1.8rem;
+   border: 2px solid #c3c6ce;
+   transition: 0.5s ease-out;
+   overflow: visible;
+  }
+
+  .card-details {
+   color: black;
+   height: 100%;
+   gap: .5em;
+   display: grid;
+   place-content: center;
+  }
+
+  .card-button {
+   transform: translate(-50%, 125%);
+   width: 60%;
+   border-radius: 1rem;
+   border: none;
+   background-color: #008bf8;
+   color: #fff;
+   font-size: 1rem;
+   padding: .5rem 1rem;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   opacity: 0;
+   transition: 0.3s ease-out;
+  }
+
+  .text-body {
+   color: rgb(134, 134, 134);
+  }
+
+  /*Text*/
+  .text-title {
+   font-size: 1.5em;
+   font-weight: bold;
+  }
+
+  /*Hover*/
+  .card:hover {
+   border-color: #008bf8;
+   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .card:hover .card-button {
+   transform: translate(-50%, 50%);
+   opacity: 1;
+  }`;
 
 export default EventCardComponent;

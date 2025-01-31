@@ -95,10 +95,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* core values  */}
-      {/* <div>
-        <CoreValuesComponent />
-      </div> */}
+
       <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
@@ -139,24 +136,8 @@ const AboutPage = () => {
               </li>
             </ul>
           </p>
-        </div>{" "}
-        <div className="md:w-1/2 ">
-          {/* <video controls className="w-full">
-            <source src="https://youtu.be/QXowrFiSPwo?si=oompmbQ2WbpD2dt3" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
-
-          {/* <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/QXowrFiSPwo?si=oVS5122f0SXLVnrI"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe> */}
         </div>
+        
       </div>
 
       <div className="bg-black ">
