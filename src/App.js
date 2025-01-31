@@ -12,6 +12,7 @@ import SermonArchive from "./pages/sermon-archive/SermonArchive.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent.jsx";
 import { AboutPageExplaination } from "./pages/about-explaination-page/AboutPageExplaination.jsx";
+import MinistryExplaination from "./pages/ministries-page/MinistryExplaination.jsx";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           <Route
             path="/about/association"
             element={<AboutPageExplaination />}
+          />
+          <Route
+          path="ministries/ministry-details"
+          element={<MinistryExplaination />}
           />
         </Routes>
         <div className="mt-10">
