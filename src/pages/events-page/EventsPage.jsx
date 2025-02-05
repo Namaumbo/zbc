@@ -1,8 +1,33 @@
 import React from "react";
 import NavBarComponent from "../../components/NavBarComponent";
 import EventCardComponent from "../../components/EventCardComponent";
+import axios from "axios";
 
 const EventsPage = () => {
+  const API_URL = process.env.REACT_APP_API_STRAPI_URL;
+  const [events, setEvents] = React.useState([]);
+
+  React.useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        // Fetch events from API
+        const response = await axios.get(
+          `${API_URL}/events?populate=eventImage`,
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.REACT_APP_STRAPI_API_KEY}`,
+            },
+          }
+        );
+        setEvents(response.data.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchEvents();
+  }, [API_URL]);
+
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* NavBar */}
@@ -35,12 +60,12 @@ const EventsPage = () => {
             Upcoming Events
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((index) => (
+            {events.map((event,index) => (
               <div
                 key={index}
                 className="transform transition-transform hover:scale-105"
               >
-                <EventCardComponent />
+                <EventCardComponent  data={event}/>
               </div>
             ))}
           </div>
@@ -61,7 +86,7 @@ const EventsPage = () => {
               theme &quot;Ebenezer: Celebrating God’s Faithfulness,&quot; this
               event commemorated achievements such as the successful repayment
               of the church house loan, excellent leading academic results
-              through the Church’s schools, and other ministry milestones.
+              through the Church's schools, and other ministry milestones.
             </p>
             <p className="font-heading_secondary">
               Key activities during the celebration included:
@@ -104,5 +129,4 @@ const EventsPage = () => {
     </div>
   );
 };
-
 export default EventsPage;
