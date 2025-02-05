@@ -1,130 +1,208 @@
 const MinistriesExplaination = [
   {
     ministry: "Women's Ministry",
-    explaination:
-      "This is the ministry for women. The aim is to disciple one another to grow in faith in Christ. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Corinthians 3:9",
     coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 17.34.38.jpeg",
     description:
-      "Serve and give by being God’s coworker and part of His field and building.",
-    verse: "1 Corinthians 3:9",
+      "Serve and give by being God's coworker and part of His field and building.",
+    image1: "/zbc-images/WhatsApp Image 2025-01-27 at 18.23.46.jpeg",
+    image2: "/zbc-images/WhatsApp Image 2025-01-27 at 17.23.45.jpeg",
+    details: [
+      "Weekly meetings on Saturdays from 8:00 am to 09:30 am",
+      "Bible study and prayer sessions",
+      "Visitation and encouragement programs",
+      "Life skills sharing sessions",
+    ],
+    verse:
+      "For we are co-workers in God's service; you are God's field, God's building. - 1 Corinthians 3:9",
   },
   {
     ministry: "Children's Ministry",
-    explaination:
-      "This is the ministry which reaches out to children. The aim of the ministry is to provide sound understanding of the word of God to children so that they are well prepared and equipped for good work. 2 Timothy 3: 16-17.",
     coverPage: "/chidrenMinistry.jpg",
     description:
-      "Nurturing children's spiritual growth through Bible lessons, activities, and worship in a fun, engaging environment.",
-    verse: "Luke 2: 52",
+      "Nurturing children's spiritual growth through comprehensive biblical education.",
+    image1: "/children-activity-1.jpg",
+    image2:
+      "/zbc-images/WhatsApp Image 2025-01-27 at 19.45.53.jpeg",
+    details: [
+      "Age-appropriate Bible lessons and activities",
+      "Three sub-ministries: Girls Auxiliary, Kingdom Ambassador & Young Ambassador",
+      "Regular parent-teacher meetings",
+      "Special holiday programs and events",
+    ],
+    verse:
+      "And Jesus grew in wisdom and stature, and in favor with God and man. - Luke 2:52",
   },
   {
-    ministry: "Girls Auxiliary Ministry",
-    explaination: "Contents to come ",
-    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 19.43.47.jpeg",
-    description:
-      "Nurturing young girls in faith, character development, and leadership skills.",
-    verse: "Proverbs 31:25",
-  },
-  {
-    ministry: "Youth Ministry ",
-    explaination:
-      "This is the ministry for young people or adolescents and young women and young men, aged around 15 to 35 years. The aim of this ministry is to disciple young people to grow in their relationship with God. They meet on Sundays after Chichewa service. When they meet, they do Bible study, pray together and also do some sporting activities. 1 Timothy 6: 11-12.",
-    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 15.51.17.jpeg",
+    ministry: "Ministries for the Youth",
+    coverPage: "/youthMinistry.jpg",
     description:
       "Empowering youth through faith-based activities, worship, and leadership development.",
-    verse: "1 Timothy 6:11-12",
+    image1: "/zbc-images/WhatsApp Image 2025-01-27 at 19.43.47.jpeg",
+    image2: "/youth-activity-2.jpg",
+    details: [
+      "Sunday meetings after Chichewa service",
+      "Regular Bible study sessions",
+      "Group prayer meetings",
+      "Sports and recreational activities",
+      "Leadership training programs",
+    ],
+    verse:
+      "Fight the good fight of the faith. Take hold of the eternal life to which you were called. - 1 Timothy 6:11-12",
   },
+  // {
+  //   ministry: "Young Lady Ministry",
+  //   coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 16.47.32.jpeg",
+  //   description: "Shaping young women aged 17-35 to become exemplary women.",
+  //   image1: "/young-ladies-1.jpg",
+  //   image2: "/young-ladies-2.jpg",
+  //   details: [
+  //     "Regular mentorship programs",
+  //     "Life skills workshops",
+  //     "Bible study sessions",
+  //     "Community outreach activities"
+  //   ],
+  //   verse: "Don't let anyone look down on you because you are young, but set an example for the believers. - 1 Timothy 4:12"
+  // },
   {
-    ministry: "Young Lady Ministry",
-    explaination:
-      "This is the ministry for men. The aim of this ministry is to disciple men to grow in their relationship with God. They meet on Saturdays from 8:00 am to 09:30 am. During their meetings, they do Bible study, pray together, visits and encourage each other, and share life skills with one another. 1 Timothy 4:12.",
-    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 16.47.32.jpeg",
-    description: ": Shaping young women aged 17-35 to become exemplary women.",
-    verse: "1 Timothy 4:12",
+    ministry: "Young Ambassodor Ministry",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 16.38.12.jpeg",
+    description: "Shaping young women aged 17-35 to become exemplary women.",
+    image1: "/young-ladies-1.jpg",
+    image2: "/young-ladies-2.jpg",
+    details: [
+      "Regular mentorship programs",
+      "Life skills workshops",
+      "Bible study sessions",
+      "Community outreach activities",
+    ],
+    verse:
+      "Don't let anyone look down on you because you are young, but set an example for the believers. - 1 Timothy 4:12",
   },
   {
     ministry: "Education Ministry",
-    explaination:
-      "The aim of this ministry is to provide a Christian learning and instruction environment, facilities through which God teaches, prepares and develops learners in the city of Zomba. Psalms 32:8",
-    coverPage:
-      "/zbc-images/WhatsApp Image 2025-01-27 at 15.15.15.jpeg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 15.15.15.jpeg",
     description:
-      "Providing Christ-centered education and resources to develop spiritual and academic growth in our community.",
-    verse: "Psalms 32:8",
+      "Providing Christ-centered education and resources for spiritual and academic growth.",
+    image1:"/zbc-images/WhatsApp Image 2025-01-27 at 17.03.04.jpeg",
+    image2: "/education-2.jpg",
+    details: [
+      "Christian-based curriculum",
+      "Qualified Christian educators",
+      "Regular academic support",
+      "Spiritual development programs",
+    ],
+    verse:
+      "I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you. - Psalms 32:8",
   },
-  {
-    ministry: "Kingdom Ambassadors",
-    explaination: "Contents to come",
-    coverPage: "/kingdomAmbassador.jpg",
-    description:
-      "Training young men aged 15 to 35 to be the hands, feet, and voice of the church.",
-    verse: "2 Corinthians 5:20",
-  },
-
   {
     ministry: "Men's Ministry",
-    explaination:
-      " This is the ministry is founded on Proverbs 27:17, which states that as an iron sharpens iron, so a friend sharpens a friend. The aim of the ministry is to disciple each other and encourage men to be active in their local churches, communities, and exemplary in their homes.",
     coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 17.32.11.jpeg",
     description:
       "Building strong, godly men through fellowship, accountability, and spiritual development.",
-    verse: "Proverbs 27:17",
+    image1: "/mens-ministry-1.jpg",
+    image2: "/mens-ministry-2.jpg",
+    details: [
+      "Saturday meetings from 8:00 am to 9:30 am",
+      "Bible study and prayer sessions",
+      "Mentorship programs",
+      "Community service activities",
+    ],
+    verse:
+      "As iron sharpens iron, so one person sharpens another. - Proverbs 27:17",
   },
   {
     ministry: "Evangelism, Outreach, and Discipleship Ministry",
-    explaination:
-      "he purpose of the ministry is to share the message of salvation with other people through preaching and personal witnessing. Matthew 28:18-19.",
     coverPage: "/evanjelism.jpg",
     description:
       "Spreading the Gospel through outreach programs and discipleship training.",
-    verse: "Matthew 28:18-20",
+    image1: "/evangelism-1.jpg",
+    image2: "/evangelism-2.jpg",
+    details: [
+      "Regular evangelism training",
+      "Community outreach programs",
+      "Discipleship classes",
+      "Mission trips",
+    ],
+    verse:
+      "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit. - Matthew 28:18-20",
   },
   {
     ministry: "Music and Praise Ministry",
-    explaination:
-      "The aim of this ministry is to facilitate the praise and worship of God among church members and in congregations. Colossians 3:16.",
-    coverPage:
-      "/zbc-images/WhatsApp Image 2025-01-27 at 17.25.17.jpeg",
+    coverPage: "/zbc-images/WhatsApp Image 2025-01-27 at 17.25.17.jpeg",
     description:
       "Leading worship through music and developing musical talents for God's glory.",
-    verse: "Colossians 3:16",
+    image1: "/music-ministry-1.jpg",
+    image2: "/music-ministry-2.jpg",
+    details: [
+      "Weekly choir practice",
+      "Music training sessions",
+      "Worship team development",
+      "Special musical events",
+    ],
+    verse:
+      "Let the message of Christ dwell among you richly as you teach and admonish one another with all wisdom through psalms, hymns, and songs from the Spirit. - Colossians 3:16",
   },
   {
-    ministry: "Intersession and Prayer Ministry:",
-    explaination:
-      "The objective of this ministry is to pray in the spirit on all occasions with all kinds of prayers and requests for the church, others, Zomba, Malawi, the church of God worldwide, and the world. Ephesians 6:18 and 1 Thessalonians 5:17.",
+    ministry: "Intersession and Prayer Ministry",
     coverPage: "/prayer.jpg",
-    description:
-      "raying in the Spirit on all occasions with all kinds of prayers and requests for the Church, others, Zomba, Malawi, the Church of God world-wide, and the World.",
-    verse: "Ephesians 6:18 &  1 Thessalonica 5:17",
+    description: "Praying in the Spirit for the Church, community, and world.",
+    image1: "/prayer-ministry-1.jpg",
+    image2: "/prayer-ministry-2.jpg",
+    details: [
+      "Daily prayer meetings",
+      "Prayer chain coordination",
+      "Fasting and prayer events",
+      "Prayer request ministry",
+    ],
+    verse: "Pray continually. - 1 Thessalonians 5:17",
   },
   {
     ministry: "Young Couples",
-    explaination: "Contents to come",
     coverPage:
       "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop",
     description:
-      "Supporting newly married couples in building Christ-centered marriages through fellowship and guidance.",
-    verse: "Ephesians 5:25",
+      "Supporting newly married couples in building Christ-centered marriages.",
+    image1: "/couples-ministry-1.jpg",
+    image2: "/couples-ministry-2.jpg",
+    details: [
+      "Monthly couple fellowships",
+      "Marriage enrichment workshops",
+      "Counseling services",
+      "Family events",
+    ],
+    verse:
+      "Husbands, love your wives, just as Christ loved the church and gave himself up for her. - Ephesians 5:25",
   },
   {
     ministry: "Prison Ministry",
-    explaination:
-      "The objective of this ministry is to visit and minister to those in prison in Zomba and beyond. Matthew 25:36.",
     coverPage:
       "https://images.unsplash.com/photo-1604606370896-41bfdc2626d7?q=80&w=1000&auto=format&fit=crop",
     description:
-      " Visiting and ministering to those in prison in Zomba and beyond.",
-    verse: "Matthew 25:36",
+      "Visiting and ministering to those in prison in Zomba and beyond.",
+    image1: "/prison-ministry-1.jpg",
+    image2: "/prison-ministry-2.jpg",
+    details: [
+      "Regular prison visits",
+      "Bible study programs",
+      "Support for inmates' families",
+      "Rehabilitation programs",
+    ],
+    verse: "I was in prison and you came to visit me. - Matthew 25:36",
   },
   {
-    ministry: "Social Welfare Ministry:",
-    explaination:
-      "The aim of this ministry is to disciple young people aged 12-17 to grow in their relationship with God. 1 Timothy 4:12.",
+    ministry: "Social Welfare Ministry",
     coverPage: "/youthMinistry.jpg",
-    description:
-      "arrying out acts of kindness to all kinds of people in the Church and Zomba, and beyond.",
-    verse: "James 1:27 & Galatians 6:9",
+    description: "Carrying out acts of kindness in the Church and community.",
+    image1: "/social-welfare-1.jpg",
+    image2: "/social-welfare-2.jpg",
+    details: [
+      "Community support programs",
+      "Food and clothing distribution",
+      "Emergency assistance",
+      "Elderly care support",
+    ],
+    verse:
+      "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up. - Galatians 6:9",
   },
 ];
 

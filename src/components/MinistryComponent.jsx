@@ -1,8 +1,15 @@
 "use client";
 
+import { useNavigate } from "react-router-dom";
 import MinistriesExplaination from "../core/MinistryExplainations";
 
 export default function MinistryComponent() {
+  const navigate = useNavigate();
+
+  const handleMinistryClick = (ministry) => {
+    navigate("/ministries/ministry-details", { state: { selectedMinistry: ministry } });
+  };
+
   return (
     <>
       <div className="container mx-auto px-4">
@@ -10,7 +17,8 @@ export default function MinistryComponent() {
           {MinistriesExplaination.map((ministry, index) => (
             <div
               key={index}
-              className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-4"
+              className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-4 cursor-pointer"
+              onClick={() => handleMinistryClick(ministry)}
             >
               <div className="relative mx-4 -mt-6 h-[14rem] overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
                 <img
