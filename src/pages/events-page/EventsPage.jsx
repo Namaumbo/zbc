@@ -34,9 +34,6 @@ const EventsPage = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* NavBar */}
-      <NavBarComponent />
-
       {/* Hero Section */}
       <div
         className="relative h-[40rem] bg-cover bg-center"
@@ -64,7 +61,27 @@ const EventsPage = () => {
             Upcoming Events
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {events.map((event, index) => (
+            {[
+              {
+                title: "Hello this is ok",
+                date: "2 January",
+                location: "Zomba Central Business Area",
+                imageUrl: "/bg-5.jpg",
+              },
+
+              {
+                title: "Evangelism Exhibition",
+                date: "13 march ",
+                location: "Zomba Central Business Area",
+                imageUrl: "/evangelism.jpg",
+              },
+              {
+                title: "Hello this is ok",
+                date: "13 December",
+                location: "Zomba Central Business Area",
+                imageUrl: "/bg-3.jpg",
+              },
+            ].map((event, index) => (
               <div
                 key={index}
                 className="transform transition-transform hover:scale-105"
