@@ -25,8 +25,16 @@ const AboutPage = () => {
       position: "Chief Elder",
       image: "/placeholder.jpg",
     },
-    { fullName: "Mr Kelvin Gunya", position: "Elder", image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.51.27.jpeg" },
-    { fullName: "Mr Me Mopiha", position: "Church Secretary", image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.49.02.jpeg" },
+    {
+      fullName: "Mr Kelvin Gunya",
+      position: "Elder",
+      image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.51.27.jpeg",
+    },
+    {
+      fullName: "Mr Me Mopiha",
+      position: "Church Secretary",
+      image: "/zbc-images/WhatsApp Image 2025-01-28 at 16.49.02.jpeg",
+    },
     {
       fullName: "Nales Petro",
       position: "Deaconess",
@@ -95,7 +103,6 @@ const AboutPage = () => {
         </div>
       </div>
 
-
       <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
@@ -137,7 +144,6 @@ const AboutPage = () => {
             </ul>
           </p>
         </div>
-        
       </div>
 
       <div className="bg-black ">
@@ -201,7 +207,7 @@ const AboutPage = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 py-12 ">
-          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border border-gray-100">
+          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform border-dashed border-2 border-gray-100 ">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 border border-brand_color rounded-full flex items-center justify-center mr-4">
                 <svg
@@ -228,7 +234,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border border-gray-100">
+          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border-dashed border-2 border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 border border-brand_color rounded-full flex items-center justify-center mr-4">
                 <svg
@@ -260,7 +266,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border border-gray-100">
+          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border-dashed border-2 border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 border border-brand_color rounded-full flex items-center justify-center mr-4">
                 <svg
@@ -291,7 +297,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border border-gray-100">
+          <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl   transition-all duration-300 transform  border-dashed border-2 border-gray-100">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 border border-brand_color rounded-full flex items-center justify-center mr-4">
                 <svg
