@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components";
-
+import { FiArrowRight } from "react-icons/fi";
+import { Button } from "flowbite-react";
 const EventCardComponent = ({ data }) => {
   return (
     <div className="flex items-center justify-center">
-      <div className="w-[30rem] h-[250px] rounded-[20px] bg-gradient-to-br from-gray-800/60 to-gray-900 relative shadow-2xl cursor-pointer transition-all duration-300 overflow-hidden group">
+      <div className="w-[35rem] h-[30rem] rounded-[20px] bg-gradient-to-br from-gray-800/60 to-gray-900 relative shadow-2xl cursor-pointer transition-all duration-300 overflow-hidden group">
         {/* Image container */}
         <div className="absolute inset-0">
           <img
@@ -24,6 +24,18 @@ const EventCardComponent = ({ data }) => {
             <p className="text-sm text-gray-300 mt-1 truncate">
               {data?.description || "Event description"}
             </p>
+            <span>{data?.time}</span>
+            <p>{data?.location}</p>
+            <Button
+              pill
+              className="mt-2 bg-brand_color group"
+              onClick={()=>(window.location.href = "/contact")}
+            >
+              <span className="flex justify-center items-center gap-2 transition-all duration-300 group-hover:gap-3">
+                Learn More
+                <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+              </span>
+            </Button>
           </div>
         </div>
 

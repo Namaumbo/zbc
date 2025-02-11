@@ -67,6 +67,7 @@ const EventsPage = () => {
                 date: "2 January",
                 location: "Zomba Central Business Area",
                 imageUrl: "/bg-5.jpg",
+                time: "08 : 00am - 09 : 30am"
               },
 
               {
@@ -74,12 +75,17 @@ const EventsPage = () => {
                 date: "13 march ",
                 location: "Zomba Central Business Area",
                 imageUrl: "/evangelism.jpg",
+                description:"lorem  ipsum indure manuofp alrigt",
+                time: "08 : 00am - 09 : 30am"
+
               },
               {
                 title: "Hello this is ok",
                 date: "13 December",
                 location: "Zomba Central Business Area",
                 imageUrl: "/bg-3.jpg",
+                time: "08 : 00am - 09 : 30am"
+
               },
             ].map((event, index) => (
               <div
