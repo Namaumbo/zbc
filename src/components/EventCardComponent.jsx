@@ -2,13 +2,15 @@ import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import { Button } from "flowbite-react";
 const EventCardComponent = ({ data }) => {
+  console.log(process.env.REACT_APP_API_STRAPI_URL+data?.imageUrl.url)
+
   return (
     <div className="flex items-center justify-center">
       <div className="w-[35rem] h-[30rem] rounded-[20px] bg-gradient-to-br from-gray-800/60 to-gray-900 relative shadow-2xl cursor-pointer transition-all duration-300 overflow-hidden group">
         {/* Image container */}
         <div className="absolute inset-0">
           <img
-            src={data?.imageUrl || "/api/placeholder/300/250"}
+            src={data?.imageUrl?.url ? process.env.REACT_APP_API_STRAPI_URL + data.imageUrl.url : "/api/placeholder/300/250"}
             alt={data?.title || "Event image"}
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
           />

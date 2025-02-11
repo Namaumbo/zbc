@@ -1,31 +1,26 @@
 import React from "react";
-import NavBarComponent from "../../components/NavBarComponent";
 import EventCardComponent from "../../components/EventCardComponent";
 import axios from "axios";
 
 const EventsPage = () => {
   const API_URL = process.env.REACT_APP_API_STRAPI_URL;
   const [events, setEvents] = React.useState([]);
-// 
+  //
   React.useEffect(() => {
     const fetchEvents = async () => {
       try {
-        
         // Fetch events from API
-        const response = await axios.get(
-          `${API_URL}events?populate=*`,
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.REACT_APP_STRAPI_API_KEY}`,
-            },
-          }
-        );
-        console.log(response.data)
+        const response = await axios.get(`${API_URL}events?populate=imageUrl`, {
+          headers: {
+            Authorization: `Bearer ${process.env.REACT_APP_STRAPI_API_KEY}`,
+          },
+        });
         setEvents(response.data.data);
+      
       } catch (err) {
-        // setEvents([]);
+        setEvents([]);
 
-        console.log("erero =>>>>>",err);
+        console.log("erero =>>>>>", err);
       } finally {
         // setEvents([]);
       }
@@ -63,7 +58,7 @@ const EventsPage = () => {
             Upcoming Events
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+            {/* {[
               {
                 title: "Hello this is ok",
                 date: "2 January",
@@ -89,7 +84,10 @@ const EventsPage = () => {
                 time: "08 : 00am - 09 : 30am"
 
               },
-            ].map((event, index) => (
+            ] */}
+            {
+            
+            events.map((event, index) => (
               <div
                 key={index}
                 className="transform transition-transform hover:scale-105"
