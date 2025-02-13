@@ -12,6 +12,9 @@ const NavBarComponent = () => {
   const linkStyle =
     "text-black hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-heading transition duration-300";
 
+    // FIXME: i can not get hte API_URL for some reasone
+    
+  const API_URL = process.env.REACT_APP_STRAPI_LOGIN;
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const InfoNavComponent = () => {
     return (
@@ -51,9 +54,12 @@ const NavBarComponent = () => {
             {/* Right Section */}
             <div className="ml-auto flex items-center gap-6">
               {/* Client Login */}
+              {/* FIXME */}
               <a
-                href="/login"
-                className="group flex items-center gap-2 text-sm font-medium text-purple-600 hover:text-purple-600"
+                href={API_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 cursor-pointer text-sm font-medium text-purple-600 hover:text-purple-600"
               >
                 <svg
                   className="h-4 w-4 transition-transform group-hover:-rotate-12"

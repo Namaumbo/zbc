@@ -58,33 +58,7 @@ const EventsPage = () => {
             Upcoming Events
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* {[
-              {
-                title: "Hello this is ok",
-                date: "2 January",
-                location: "Zomba Central Business Area",
-                imageUrl: "/bg-5.jpg",
-                time: "08 : 00am - 09 : 30am"
-              },
-
-              {
-                title: "Evangelism Exhibition",
-                date: "13 march ",
-                location: "Zomba Central Business Area",
-                imageUrl: "/evangelism.jpg",
-                description:"lorem  ipsum indure manuofp alrigt",
-                time: "08 : 00am - 09 : 30am"
-
-              },
-              {
-                title: "Hello this is ok",
-                date: "13 December",
-                location: "Zomba Central Business Area",
-                imageUrl: "/bg-3.jpg",
-                time: "08 : 00am - 09 : 30am"
-
-              },
-            ] */}
+            
             {
             
             events.map((event, index) => (
