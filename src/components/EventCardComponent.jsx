@@ -1,60 +1,76 @@
-import React from "react";
-import { FiArrowRight } from "react-icons/fi";
-import { Button } from "flowbite-react";
-const EventCardComponent = ({ data }) => {
-  console.log(process.env.REACT_APP_API_STRAPI_URL+data?.imageUrl.url)
+import React from 'react';
+import styled from 'styled-components';
 
+const EventCardComponent = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="w-[35rem] h-[30rem] rounded-[20px] bg-gradient-to-br from-gray-800/60 to-gray-900 relative shadow-2xl cursor-pointer transition-all duration-300 overflow-hidden group">
-        {/* Image container */}
-        <div className="absolute inset-0">
-          <img
-            src={data?.imageUrl?.url ? process.env.REACT_APP_API_STRAPI_URL + data.imageUrl.url : "/api/placeholder/300/250"}
-            alt={data?.title || "Event image"}
-            className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
-          />
+    <StyledWrapper>
+      <div className="card">
+        <div className="card-details">
+          <p className="text-title">Card title</p>
+          <p className="text-body">Here are the details of the card</p>
         </div>
-
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 ">
-          {/* You can add title or other content here */}
-          <div className="absolute bottom-4 left-4 right-4 text-white">
-            <h3 className="text-xl font-bold truncate">
-              {data?.title || "Event Title"}
-            </h3>
-            <p className="text-sm text-gray-300 mt-1 truncate">
-              {data?.description || "Event description"}
-            </p>
-            <span>{data?.time}</span>
-            <p>{data?.location}</p>
-            <Button
-              pill
-              className="mt-2 bg-brand_color group"
-              onClick={()=>(window.location.href = "/contact")}
-            >
-              <span className="flex justify-center items-center gap-2 transition-all duration-300 group-hover:gap-3">
-                Learn More
-                <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-              </span>
-            </Button>
-          </div>
-        </div>
-
-        {/* Date ribbon */}
-        <div className="absolute overflow-hidden w-[150px] h-[150px] -top-[10px] -left-[10px] flex items-center justify-center">
-          <div className="absolute w-[150%] h-[40px] bg-gradient-to-r from-brand_color via-brand_color/10 to-brand_color -rotate-45 -translate-y-5 flex items-center justify-center text-white font-semibold tracking-wider uppercase shadow-md">
-            {data?.date}
-          </div>
-          {/* Corner decoration */}
-          <div className="absolute w-[10px] h-[10px] bottom-0 left-0 -z-10">
-            <div className="absolute w-[10px] h-[10px] translate-x-[140px] -translate-y-[140px] bg-brand_color"></div>
-            <div className="w-full h-full bg-gradient-to-r from-brand_color via-brand_color/10 to-brand_color"></div>
-          </div>
-        </div>
+        <button className="card-button">More info</button>
       </div>
-    </div>
+    </StyledWrapper>
   );
-};
+}
+
+const StyledWrapper = styled.div`
+  .card {
+   width: 190px;
+   height: 254px;
+   border-radius: 20px;
+   background: #f5f5f5;
+   position: relative;
+   padding: 1.8rem;
+   border: 2px solid #c3c6ce;
+   transition: 0.5s ease-out;
+   overflow: visible;
+  }
+
+  .card-details {
+   color: black;
+   height: 100%;
+   gap: .5em;
+   display: grid;
+   place-content: center;
+  }
+
+  .card-button {
+   transform: translate(-50%, 125%);
+   width: 60%;
+   border-radius: 1rem;
+   border: none;
+   background-color: #008bf8;
+   color: #fff;
+   font-size: 1rem;
+   padding: .5rem 1rem;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   opacity: 0;
+   transition: 0.3s ease-out;
+  }
+
+  .text-body {
+   color: rgb(134, 134, 134);
+  }
+
+  /*Text*/
+  .text-title {
+   font-size: 1.5em;
+   font-weight: bold;
+  }
+
+  /*Hover*/
+  .card:hover {
+   border-color: #008bf8;
+   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .card:hover .card-button {
+   transform: translate(-50%, 50%);
+   opacity: 1;
+  }`;
 
 export default EventCardComponent;

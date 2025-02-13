@@ -40,14 +40,14 @@ const MinistryExplaination = () => {
 
                 {/* Two Pictures Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                  <div className="relative h-96 rounded-lg  shadow-lg">
+                  <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                     <img
                       src={selectedMinistry.image1} // Add this field to your ministry data
                       alt="Ministry Activity 1"
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="relative h-96 rounded-lg  shadow-lg">
+                  <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
                     <img
                       src={selectedMinistry.image2} // Add this field to your ministry data
                       alt="Ministry Activity 2"

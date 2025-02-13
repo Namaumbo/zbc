@@ -13,15 +13,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FooterComponent from "./components/FooterComponent.jsx";
 import { AboutPageExplaination } from "./pages/about-explaination-page/AboutPageExplaination.jsx";
 import MinistryExplaination from "./pages/ministries-page/MinistryExplaination.jsx";
-import NavBarComponent from "./components/NavBarComponent.jsx";
 
 function App() {
   return (
     <Router>
-      <div>
-        <div >
-          <NavBarComponent/>
-        </div>
+      <div className="">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
