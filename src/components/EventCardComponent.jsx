@@ -3,7 +3,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { Button } from "flowbite-react";
 const EventCardComponent = ({ data }) => {
   const STRAPI_URL = process.env.REACT_APP_CONTENT_API;
-  console.log(STRAPI_URL)
+  // console.log(STRAPI_URL)
   return (
     <div className="flex items-center justify-center">
       <div className="w-[35rem] h-[30rem] rounded-[20px] bg-gradient-to-br from-gray-800/60 to-gray-900 relative shadow-2xl cursor-pointer transition-all duration-300 overflow-hidden group">
