@@ -8,7 +8,7 @@ const EventsPage = () => {
   const [events, setEvents] = React.useState([]);
 
 
-  
+
   React.useEffect(() => {
 
     const fetchEvents = async () => {
@@ -19,6 +19,7 @@ const EventsPage = () => {
             Authorization: `Bearer ${process.env.REACT_APP_STRAPI_API_KEY}`,
           },
         });
+        console.log(response.data.data)
         setEvents(response.data.data);
       
       } catch (err) {
