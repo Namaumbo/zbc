@@ -3,6 +3,7 @@ import EventCardComponent from "../../components/EventCardComponent";
 import axios from "axios";
 
 const EventsPage = () => {
+  
   const API_URL = process.env.REACT_APP_API_STRAPI_URL;
   const [events, setEvents] = React.useState([]);
   //
