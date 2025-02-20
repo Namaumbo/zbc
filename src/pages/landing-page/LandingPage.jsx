@@ -6,6 +6,7 @@ import ScrollReveal from "scrollreveal";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { CarouselComponent } from "../../components/CarouselComponent";
 import SquareDots from "../../components/SquareDots";
+import HeroSection from "../../components/HeroSection";
 
 const LandingPage = () => {
   const { scrollY } = useScroll();
@@ -39,7 +40,7 @@ const LandingPage = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center min-h-screen relative bg-fixed mt-[8%]"
+        className="bg-cover bg-center min-h-screen relative bg-fixed"
         style={{
           backgroundImage: `url(${background})`,
           backgroundAttachment: "fixed",
@@ -55,20 +56,9 @@ const LandingPage = () => {
         }}
       >
         <div className="absolute inset-0  bg-purple-900/60"></div>
-
-
-        <div className="items-center">
-          <CarouselComponent />
+        <div className="container mx-auto flex flex-col justify-center items-center h-screen">
+          <HeroSection />
         </div>
-
-        <motion.div
-          className=" absolute bottom-[9rem] left-1/2 transform -translate-x-1/2"
-          style={{ opacity }}
-          animate={{ y: [0, 15, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
-        >
-          <BiSolidDownArrow size={52} color="white" />
-        </motion.div>
       </div>
 
       <div className="px-4 sm:px-6 lg:px-14 container mx-auto flex flex-row justify-center items-center mt-10 p-4 ">

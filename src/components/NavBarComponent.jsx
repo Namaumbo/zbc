@@ -98,7 +98,8 @@ const NavBarComponent = () => {
       <>
         <motion.nav className="bg-white sticky top-0 z-50 w-full pt-5 pb-5 shadow-md">
           <div className="container mx-auto px-2 sm:px-6 ">
-            <div className="flex justify-between items-center h-16 sm:h-20">
+
+            <div className="flex justify-between items-center h-[20%]">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="flex-shrink-0 cursor-pointer"

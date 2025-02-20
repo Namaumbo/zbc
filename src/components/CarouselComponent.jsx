@@ -2,6 +2,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { BiSolidDownArrow } from 'react-icons/bi';
 
 export function CarouselComponent() {
   const content = [
@@ -23,6 +24,8 @@ export function CarouselComponent() {
       verse: "Mathew 28:18-20",
     },
   ];
+    const [opacity, setOpacity] = React.useState(1);
+  
 
   return (
     <div className="h-[50vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
@@ -35,7 +38,7 @@ export function CarouselComponent() {
         {content.map((item, index) => (
           <div
             key={index}
-            className="h-full flex items-center justify-center px-4"
+            className=""
           >
             <AnimatePresence mode="wait">
               <motion.div
@@ -58,6 +61,14 @@ export function CarouselComponent() {
           </div>
         ))}
       </Carousel>
+      <motion.div
+            className="absolute mt-[5%] left-1/2 transform -translate-x-1/2 hidden md:block"
+            style={{ opacity }}
+            animate={{ y: [0, 15, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+          >
+            <BiSolidDownArrow className="w-8 h-8 sm:w-12 sm:h-12 text-white" />
+          </motion.div>
     </div>
   );
 }
