@@ -35,7 +35,7 @@ const LandingPage = () => {
   }, []);
 
   const headingStyle =
-    "text-semi_heading_color font-heading mt-4 text-4xl font-bold tracking-tight  text-gray-900 sm:text-5xl";
+    "text-semi_heading_color font-heading text-4xl font-bold tracking-tight  text-gray-900 sm:text-5xl";
   return (
     <>
       <div
@@ -302,7 +302,7 @@ const LandingPage = () => {
               </span>
             </h1>
 
-            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
+            <p className="font-heading_secondary text-justify text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
               We invite you to join us in worship and fellowship. Experience the
               warmth of our community as we gather together to praise God and
               grow in faith. "For where two or three gather in my name, there am
@@ -359,7 +359,7 @@ const LandingPage = () => {
               </span>
             </h1>
 
-            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed">
+            <p className="font-heading_secondary text-lg md:text-xl mt-6 mb-8 text-gray-700 leading-relaxed text-justify">
               Join us in our dedicated corporate prayer sessions where we come
               together as a community to seek God's presence, intercede for one
               another, and experience the power of unified prayer.
