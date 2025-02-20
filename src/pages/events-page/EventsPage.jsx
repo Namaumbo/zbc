@@ -3,10 +3,14 @@ import EventCardComponent from "../../components/EventCardComponent";
 import axios from "axios";
 
 const EventsPage = () => {
+
   const API_URL = process.env.REACT_APP_API_STRAPI_URL;
   const [events, setEvents] = React.useState([]);
-  //
+
+
+
   React.useEffect(() => {
+
     const fetchEvents = async () => {
       try {
         // Fetch events from API
@@ -15,6 +19,7 @@ const EventsPage = () => {
             Authorization: `Bearer ${process.env.REACT_APP_STRAPI_API_KEY}`,
           },
         });
+        console.log(response.data.data)
         setEvents(response.data.data);
       
       } catch (err) {
