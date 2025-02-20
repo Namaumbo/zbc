@@ -11,6 +11,7 @@ module.exports = {
         paragraph: ["Poppins", "sans-serif"],
         heading: ["Poppins", "sans-serif"],
         heading_secondary: ["Raleway", "sans-serif"],
+        navFont :["Inter", "serif"],
       },
 
       colors: {

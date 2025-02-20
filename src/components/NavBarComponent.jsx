@@ -1,21 +1,18 @@
 import { Button } from "flowbite-react";
 import React from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
-/**
- * The `NavBarComponent` is a React functional component that renders the navigation bar for the application.
- * It includes a logo, links to various pages, and a "Get Involved" button.
- * The navigation bar is sticky and positioned at the top of the page with a z-index of 50.
- * The component uses the `flowbite-react` library for the button component.
- */
 const NavBarComponent = () => {
   const linkStyle =
-    "text-black hover:text-gray-300 px-2 sm:px-4 py-2 text-base sm:text-lg font-heading transition duration-300";
+    "text-black px-2 sm:px-4 py-2 text-base sm:text-lg font-navFont transition duration-200 relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-purple-600 after:transition-all after:duration-200";
 
-    // FIXME: i can not get hte API_URL for some reasone
-    
+  const activeLinkStyle = "text-purple-600 after:w-full font-bold"; // Add a custom style for active links
+  const activeLinkStyle2 = "text-purple-600  font-bold"; 
   const API_URL = process.env.REACT_APP_STRAPI_LOGIN;
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const location = useLocation();
+
   const InfoNavComponent = () => {
     return (
       <>
@@ -51,10 +48,7 @@ const NavBarComponent = () => {
               </a>
             </div>
 
-            {/* Right Section */}
             <div className="ml-auto flex items-center gap-6">
-              {/* Client Login */}
-              {/* FIXME */}
               <a
                 href={API_URL}
                 target="_blank"
@@ -102,12 +96,7 @@ const NavBarComponent = () => {
   const LinksNavbarComponent = () => {
     return (
       <>
-        <motion.nav
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white sticky top-0 z-50 w-full pt-5 pb-5 shadow-md"
-        >
+        <motion.nav className="bg-white sticky top-0 z-50 w-full pt-5 pb-5 shadow-md">
           <div className="container mx-auto px-2 sm:px-6 ">
             <div className="flex justify-between items-center h-16 sm:h-20">
               <motion.div
@@ -130,7 +119,7 @@ const NavBarComponent = () => {
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="text-white hover:text-gray-300 focus:outline-none"
+                  className="text-black hover:text-black-300 focus:outline-none font-navFont"
                 >
                   <svg
                     className="h-6 w-6"
@@ -158,7 +147,7 @@ const NavBarComponent = () => {
               </div>
 
               {/* Desktop menu */}
-              <div className="hidden md:flex items-center space-x-2 ">
+              <div className="hidden md:flex items-center space-x-2 font-navFont">
                 {[
                   { href: "/about", text: "About" },
                   { href: "/ministries", text: "Ministries" },
@@ -169,13 +158,16 @@ const NavBarComponent = () => {
                   <motion.a
                     key={link.href}
                     href={link.href}
-                    className={linkStyle}
+                    className={`${linkStyle} ${
+                      location.pathname === link.href ? activeLinkStyle : ""
+                    }`}
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                     whileHover={{ scale: 1.1 }}
                   >
                     {link.text}
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#6B21A8] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
                   </motion.a>
                 ))}
                 <motion.div
@@ -200,7 +192,7 @@ const NavBarComponent = () => {
                 opacity: isMenuOpen ? 1 : 0,
                 height: isMenuOpen ? "auto" : 0,
               }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.1 }}
               className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
@@ -214,7 +206,9 @@ const NavBarComponent = () => {
                   <motion.a
                     key={link.href}
                     href={link.href}
-                    className="block text-white hover:text-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-sm sm:text-base font-medium lg:px-2"
+                    className={`${linkStyle} block text-black hover:text-gray-300 px-2 sm:px-3 py-1 sm:py-2 text-sm sm:text-base font-medium font-navFont lg:px-2 ${
+                      location.pathname === link.href ? activeLinkStyle2 : ""
+                    }`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
@@ -227,7 +221,12 @@ const NavBarComponent = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button className="w-full bg-[#6B21A8]">Get Involved</Button>
+                  <Button
+                    onClick={() => (window.location.href = "/about")}
+                    className="w-full bg-[#6B21A8]"
+                  >
+                    Get Involved
+                  </Button>
                 </motion.div>
               </div>
             </motion.div>
