@@ -56,7 +56,7 @@ const LandingPage = () => {
         }}
       >
         <div className="absolute inset-0  bg-purple-900/60"></div>
-        <div className="container mx-auto flex flex-col justify-center items-center h-screen">
+        <div className="container mx-auto flex flex-col justify-center items-center h-[80%]">
           <HeroSection />
         </div>
       </div>

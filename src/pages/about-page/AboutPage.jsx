@@ -76,15 +76,13 @@ const AboutPage = () => {
   return (
     <>
       <div className="">
-        <NavBarComponent />
-
         <div
-          className="relative h-[40rem] mb-8 bg-cover bg-center"
+          className="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh] bg-cover bg-center"
           style={{
             backgroundImage: "url(/congregation1.jpg)",
           }}
         >
-          <div className="absolute inset-0 bg-blue-900/60">
+          {/* <div className="absolute inset-0 bg-blue-900/60">
             <div className="flex flex-col items-center justify-center h-full text-center px-4">
               <h2 className=" font-heading text-white text-4xl sm:text-5xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold mb-4 w-[60%]">
                 About Zomba Baptist Church, Malawi
@@ -99,11 +97,11 @@ const AboutPage = () => {
                 Learn More
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
+      {/* <div className="container mx-auto px-12 py-16 md:flex md:items-center md:space-x-8">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-semibold mb-4 text-gray-400 font-heading">
             Our Story
@@ -346,7 +344,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

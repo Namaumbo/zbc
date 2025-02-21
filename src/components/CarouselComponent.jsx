@@ -28,7 +28,7 @@ export function CarouselComponent() {
   
 
   return (
-    <div className="h-[50vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[60vh]">
+    <div className="h-[50vh] sm:h-[30vh] xl:h-[50vh] 2xl:h-[40vh] border border-red-500">
       <Carousel
         slideInterval={10000}
         indicators={true}
@@ -49,7 +49,7 @@ export function CarouselComponent() {
                 transition={{ duration: 2 }}
                 className="flex flex-col items-center"
               >
-                <h1 className="font-heading text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold mb-2 sm:mb-4 text-center">
+                <h1 className="font-heading text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold sm:mb-2 text-center">
                   {item.title}
                 </h1>
                 <p className="text-white text-base sm:text-lg md:text-xl mb-4 sm:mb-8 max-w-2xl font-heading_secondary text-center mx-auto sm:border-l-8 sm:border-green-700 pl-2 pt-2 sm:pt-4">
@@ -62,7 +62,7 @@ export function CarouselComponent() {
         ))}
       </Carousel>
       <motion.div
-            className="absolute mt-[5%] left-1/2 transform -translate-x-1/2 hidden md:block"
+            className="absolute mt-[3%] left-1/2 transform -translate-x-1/2 hidden md:block"
             style={{ opacity }}
             animate={{ y: [0, 15, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}

@@ -7,7 +7,6 @@ import MinistryComponent from "../../components/MinistryComponent";
 const ParallaxScroll = () => {
   return (
     <div className="relative bg-white">
-      <NavBarComponent />
       {/* Hero sections */}
 
       <div

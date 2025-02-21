@@ -6,9 +6,6 @@ import { Button } from "flowbite-react";
 const SermonArchive = () => {
   return (
     <div className="bg-gray-50">
-      {/* NavBar */}
-      <NavBarComponent />
-
       {/* Hero Section */}
       <div
         className="relative h-[40rem] mb-16 bg-cover bg-center"

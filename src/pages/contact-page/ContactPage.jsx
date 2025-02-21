@@ -7,9 +7,6 @@ import { TextAreaComponent } from "../../components/TextAreaComponent";
 const ContactPage = () => {
   return (
     <div className="bg-gray-50">
-      {/* NavBar */}
-      <NavBarComponent />
-
       {/* Hero Section */}
       <div
         className="relative h-[40rem] bg-cover bg-center"
